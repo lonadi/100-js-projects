@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Converter</title>
+    <script src="../all.js"></script>
+    <link rel="stylesheet" href="../css/height-converter.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Height Converter</h1>
+        <!-- height unit & converter -->
+        <!-- centimetres to metres 1 > 0.01 -->
+        <!-- metres to centimetres 1 > 100 -->
+        <!-- metres to km 1 > 0.001 -->
+        <!-- km to metres 1 > 1000 -->
+        <!-- 1 inch = 2.54 cm -->
+        <!-- 1cm - 0,393701 -->
+        <!-- microns to millimetres 1 > 0.001 mm to micron 1000 -->
+        <!--  -->
+        <br>
+        <p>Enter height value and choose a unit</p>
+        <br>
+        <label for="value"> Enter height </label>
+        <input type="text" id="userInput">
+
+        <div class="options">
+            <label for="centimetres">HTML</label><br>
+            <input type="radio" id="centimetres" value="hello" name="unit">
+            <input type="radio" id="inches" name="unit">
+            <input type="radio" id="metres" name="unit">
+            <input type="radio" id="feet" name="unit">
+    
+        </div>
+
+
+        
+        <button id="calc">CALCULATE</button>
+
+        <!-- 
+            const cm = document.querySelector("#cm");
+const inches = document.querySelector("#inches");
+const feet = document.querySelector("#feet"); 
+const mtr = document.querySelector("#mtr");
+const submit = document.querySelector("#submit");
+const reset = document.querySelector("#reset");
+const inp = document.getElementById("inp");
+const btn = document.querySelectorAll(".btn");
+const bars = document.querySelectorAll(".bars");
+const footer = document.querySelector("footer");
+
+btn.forEach((elem) => {
+    elem.addEventListener("click", () => {
+        inp.style.display = "block";
+        reset.style.display = "block";
+        submit.style.display = "block";
+        footer.style.display = "none";
+        btn.forEach((hide) => {
+            hide.style.display = "none";
+        });
+    });
+});
+
+cm.addEventListener("click", () => {
+    inp.setAttribute("placeholder", "cm");
+
+    submit.addEventListener("click", () => {
+        bars[0].innerHTML = inp.value*0.39370 + " inches";
+        bars[1].innerHTML = inp.value*0.032808 + " feet";
+        bars[2].innerHTML = inp.value/100 + " meters";
+    });
+});
+
+inches.addEventListener("click", () => {
+    inp.setAttribute("placeholder", "inches");
+
+    submit.addEventListener("click", () => {
+        bars[0].innerHTML = inp.value/0.39370 + " cm";
+        bars[1].innerHTML = inp.value*0.083333 + " feet";
+        bars[2].innerHTML = inp.value/39.370 + " meters";
+    });
+});
+
+feet.addEventListener("click", () => {
+    inp.setAttribute("placeholder", "feet");
+
+    submit.addEventListener("click", () => {
+        bars[0].innerHTML = inp.value/0.032808 + " cm";
+        bars[1].innerHTML = inp.value*12 + " inches";
+        bars[2].innerHTML = inp.value/3.2808 + " meters";
+    });
+});
+
+
+mtr.addEventListener("click", () => {
+    inp.setAttribute("placeholder", "meters");
+
+    submit.addEventListener("click", () => {
+        bars[0].innerHTML = inp.value/0.01 + " cm";
+        bars[1].innerHTML = inp.value*39.370 + " inches";
+        bars[2].innerHTML = inp.value*3.2808 + " feet";
+    });
+});
+
+submit.addEventListener("click", () => {
+    bars.forEach((addClass) => {
+        addClass.classList.add("show-bars");
+    });
+})
+
+reset.addEventListener("click", () => {
+    location.reload();
+});
+
+
+         -->
+    </div>
+<script src="../js/height-converter.js"></script>
+</body>
+</html>
