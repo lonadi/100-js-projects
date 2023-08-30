@@ -11,8 +11,19 @@ html{
 }
 
 body{
-    background-color: #151515;
+    /* background-color: #151515; */
+    /* background: linear-gradient(to-right, #000, #151515); */
+    /* background: linear-gradient(
+        to right,
+        red 20%,
+        orange 20% 40%,
+        yellow 40% 60%,
+        green 60% 80%,
+        blue 80%
+      ); */
+
     color: #ffffff;
+    background: linear-gradient(#555555, #222222);
     font-family: 'EB Garamond', serif;
 }
 /* 
@@ -44,10 +55,12 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin: 10px 0;
-    width: 100%;
+    position: relative;
+    /* width: 80%; */
 }
 
-button {
+
+.actions button {
     background-color: #0ec5dd;
     color: white;
     padding: 10px;
@@ -60,7 +73,15 @@ button {
     transition: background-color 0.2s ease;
 }
 
-button:hover {
+#reset {
+    background-color: #e71212;
+}
+
+#reset:hover {
+    background-color: #c01313;
+}
+
+.actions button:hover {
     background-color: #0aabc0;
 }
 
@@ -74,4 +95,74 @@ button:hover {
 .options {
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.options input {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 3px;
+    top: 1px;
+    width: 35px;
+}
+
+#result {
+    max-width: 200px;
+}
+
+.result-display {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.result-display h2 {
+    text-align: center;
+}
+
+
+#error1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* main reason why i code */
+/* its the one thing i do & love that my dad supports.. tryna cope from football */
+/* still wanna be a footballer but i dont think its possible to convince him */
+/* artist is another one to consider.. noone knows my true intentions tho */
+
+
+
+p.alert.alert-danger {
+    border-radius: 0;
+    color: #c10000 !important;
+}
+
+.btn-group.keywords {
+    position: relative;
+    border: 1px solid #0ec5dd;
+    border-radius: 5px;
+    height: 46px;
+}
+
+.keywords button {
+    background: #0ec5dd;
+}
+
+.height-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

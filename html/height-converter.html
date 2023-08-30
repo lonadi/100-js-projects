@@ -18,103 +18,54 @@
         <!-- 1 inch = 2.54 cm -->
         <!-- 1cm - 0,393701 -->
         <!-- microns to millimetres 1 > 0.001 mm to micron 1000 -->
-        <!--  -->
+        <!-- keywords: in, cm, m, ft -->
+        <label for="value" class="fs-5"> Enter height:</label>
         <br>
-        <p>Enter height value and choose a unit</p>
         <br>
-        <label for="value"> Enter height </label>
-        <input type="text" id="userInput">
 
-        <div class="options">
-            <label for="centimetres">HTML</label><br>
-            <input type="radio" id="centimetres" value="hello" name="unit">
-            <input type="radio" id="inches" name="unit">
-            <input type="radio" id="metres" name="unit">
-            <input type="radio" id="feet" name="unit">
+        <div class="height-input">
+            <input type="number" id="userInput">
+
+            <div class="btn-group keywords">
+                <button type="button" class="btn btn-sm btn-secondary">cm</button>
+                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">in</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">m</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ft</a></li>
+                </ul>
+            </div>
     
         </div>
 
-
-        
-        <button id="calc">CALCULATE</button>
-
-        <!-- 
-            const cm = document.querySelector("#cm");
-const inches = document.querySelector("#inches");
-const feet = document.querySelector("#feet"); 
-const mtr = document.querySelector("#mtr");
-const submit = document.querySelector("#submit");
-const reset = document.querySelector("#reset");
-const inp = document.getElementById("inp");
-const btn = document.querySelectorAll(".btn");
-const bars = document.querySelectorAll(".bars");
-const footer = document.querySelector("footer");
-
-btn.forEach((elem) => {
-    elem.addEventListener("click", () => {
-        inp.style.display = "block";
-        reset.style.display = "block";
-        submit.style.display = "block";
-        footer.style.display = "none";
-        btn.forEach((hide) => {
-            hide.style.display = "none";
-        });
-    });
-});
-
-cm.addEventListener("click", () => {
-    inp.setAttribute("placeholder", "cm");
-
-    submit.addEventListener("click", () => {
-        bars[0].innerHTML = inp.value*0.39370 + " inches";
-        bars[1].innerHTML = inp.value*0.032808 + " feet";
-        bars[2].innerHTML = inp.value/100 + " meters";
-    });
-});
-
-inches.addEventListener("click", () => {
-    inp.setAttribute("placeholder", "inches");
-
-    submit.addEventListener("click", () => {
-        bars[0].innerHTML = inp.value/0.39370 + " cm";
-        bars[1].innerHTML = inp.value*0.083333 + " feet";
-        bars[2].innerHTML = inp.value/39.370 + " meters";
-    });
-});
-
-feet.addEventListener("click", () => {
-    inp.setAttribute("placeholder", "feet");
-
-    submit.addEventListener("click", () => {
-        bars[0].innerHTML = inp.value/0.032808 + " cm";
-        bars[1].innerHTML = inp.value*12 + " inches";
-        bars[2].innerHTML = inp.value/3.2808 + " meters";
-    });
-});
+        <br>
+        <p class="text-center fs-4">Convert to</p>
+        <div class="options">
+            <label for="centimetres">Centimetres</label>
+            <input type="radio" id="centimetres" value="Centimetres" name="unit">
+            <label for="inches">Inches</label>
+            <input type="radio" id="inches" name="unit">
+            <label for="Metres">Metres</label>
+            <input type="radio" id="metres" name="unit">
+            <label for="feet">Feet</label>
+            <input type="radio" id="feet" name="unit">
+        </div>
 
 
-mtr.addEventListener("click", () => {
-    inp.setAttribute("placeholder", "meters");
+        <div class="result-display">
+            <h2>Result</h2>
+            <input type="text" id="result" readonly>
+        </div>
 
-    submit.addEventListener("click", () => {
-        bars[0].innerHTML = inp.value/0.01 + " cm";
-        bars[1].innerHTML = inp.value*39.370 + " inches";
-        bars[2].innerHTML = inp.value*3.2808 + " feet";
-    });
-});
+        <div class="actions">
+            <button id="calc">CALCULATE</button>
+            <button id="reset">RESET</button>
+        </div>
 
-submit.addEventListener("click", () => {
-    bars.forEach((addClass) => {
-        addClass.classList.add("show-bars");
-    });
-})
-
-reset.addEventListener("click", () => {
-    location.reload();
-});
-
-
-         -->
     </div>
 <script src="../js/height-converter.js"></script>
 </body>

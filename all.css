@@ -14,5 +14,6 @@ body {
     padding: auto;
 }
 
-.container {
+.alert-danger {
+    color: #e13f3f !important;
 }
