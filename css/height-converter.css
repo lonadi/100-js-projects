@@ -56,7 +56,7 @@ input {
     border-radius: 4px;
     margin: 10px 0;
     position: relative;
-    /* width: 80%; */
+    width: 90%;
 }
 
 
@@ -150,19 +150,9 @@ p.alert.alert-danger {
     color: #c10000 !important;
 }
 
-.btn-group.keywords {
-    position: relative;
-    border: 1px solid #0ec5dd;
-    border-radius: 5px;
-    height: 46px;
-}
-
-.keywords button {
-    background: #0ec5dd;
-}
-
 .height-input {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }

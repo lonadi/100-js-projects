@@ -32,6 +32,26 @@ calc.addEventListener('click', () => {
     }
 
     if (input.value.trim() === '') {
-        
+
     }
 });
+
+
+var btnContainer = document.getElementsByClassName("pagination")[0];
+
+var btns = btnContainer.getElementsByClassName("choices");
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+let options = document.getElementsByClassName("options")[0];
+function calculate() {
+    if (btns[0].className.indexOf("active") && ) {
+
+    }
+}
