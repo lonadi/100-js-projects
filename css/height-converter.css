@@ -111,6 +111,8 @@ input {
 
 #result {
     max-width: 200px;
+    cursor: default;
+    text-align: center;
 }
 
 .result-display {
