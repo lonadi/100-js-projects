@@ -34,12 +34,10 @@ calc.addEventListener('click', () => {
         container.appendChild(errorMsg)
     } 
 
-    // if (!reg.test(input.value)) {
-    //     errorMsg.innerHTML = `<p class="alert alert-danger">Input cannot contain letters</p> `
-    //     container.appendChild(errorMsg)
-    // } else {
-    //     container.removeChild(errorMsg)
-    // }
+    if (!reg.test(input.value)) {
+        errorMsg.innerHTML = `<p class="alert alert-danger">Input cannot contain letters</p> `
+        container.appendChild(errorMsg)
+    } 
     calculate()
 });
 
@@ -60,46 +58,50 @@ var options = document.getElementsByClassName("options")[0];
 
 var optionsUnit = options.getElementsByTagName('input');
 
-var result;
+// var result;
 var resultDisplayCont = document.getElementsByClassName('result-display')[0];
 var resultDisplay = resultDisplayCont.getElementsByTagName('input')[0];
-function calculate(unit) {
+function calculate(unit, result) {
 
     // if the same unit is selected by the user, then give the same value as the output.
-    if (btns[0].className.indexOf("active") && optionsUnit.item(0).checked) {
+    if (btns[0].classList.contains("active") && optionsUnit.item(0).checked) {
         unit = 'cm'
         result = input.value
         resultDisplay.value = result + unit;
+        resultDisplayCont.removeChild(document.getElementById('result-note'))
         resultDisplayCont.style.cssText = 
         `
             display: flex !important;
         `
     }
 
-    if (btns[1].className.indexOf("active") && optionsUnit.item(1).checked) {
+    if (btns[1].classList.contains("active") && optionsUnit.item(1).checked) {
         unit = 'in'
         result = input.value
         resultDisplay.value = result + unit;
+        resultDisplayCont.removeChild(document.getElementById('result-note'))
         resultDisplayCont.style.cssText = 
         `
             display: flex !important;
         `
     }
 
-    if (btns[2].className.indexOf("active") && optionsUnit.item(2).checked) {
+    if (btns[2].classList.contains("active") && optionsUnit.item(2).checked) {
         unit = 'm'
         result = input.value
         resultDisplay.value = result + unit;
+        resultDisplayCont.removeChild(document.getElementById('result-note'))
         resultDisplayCont.style.cssText = 
         `
             display: flex !important;
         `
     }
 
-    if (btns[3].className.indexOf("active") && optionsUnit.item(3).checked) {
+    if (btns[3].classList.contains("active") && optionsUnit.item(3).checked) {
         unit = 'ft'
         result = input.value
         resultDisplay.value = result + unit;
+        resultDisplayCont.removeChild(document.getElementById('result-note'))
         resultDisplayCont.style.cssText = 
         `
             display: flex !important;
@@ -107,7 +109,7 @@ function calculate(unit) {
     }
 
     // cm to others
-    if (btns[0].className.indexOf("active") && optionsUnit.item(1).checked) {
+    if (btns[0].classList.contains("active") && optionsUnit.item(1).checked) {
         unit = 'in'
         result = input.value * Math.round(0.393701 * 10) / 10
         resultDisplay.value = result + unit;
@@ -117,7 +119,7 @@ function calculate(unit) {
         `
     }
 
-    if (btns[0].className.indexOf("active") && optionsUnit.item(2).checked) {
+    if (btns[0].classList.contains("active") && optionsUnit.item(2).checked) {
         unit = 'm'
         result = input.value * 0.01
         resultDisplay.value = result + unit;
@@ -127,7 +129,7 @@ function calculate(unit) {
         `
     }
 
-    if (btns[0].className.indexOf("active") && optionsUnit.item(3).checked) {
+    if (btns[0].classList.contains("active") && optionsUnit.item(3).checked) {
         unit = 'ft'
         result = input.value * Math.round(0.0328084 * 1000) / 1000
         resultDisplay.value = result + unit;
@@ -142,9 +144,9 @@ function calculate(unit) {
     // 
     // 
     // in to others
-    if (btns[1].className.indexOf("active") && optionsUnit.item(0).checked) {
+    if (btns[1].classList.contains("active") && optionsUnit.item(0).checked) {
         unit = 'cm'
-        result = input.value / Math.round(0.393701 * 10) / 10
+        result = input.value * Math.round(2.54 * 100) / 100
         resultDisplay.value = result + unit;
         resultDisplayCont.style.cssText = 
         `
@@ -152,9 +154,9 @@ function calculate(unit) {
         `
     }
 
-    if (btns[1].className.indexOf("active") && optionsUnit.item(2).checked) {
+    if (btns[1].classList.contains("active") && optionsUnit.item(2).checked) {
         unit = 'm'
-        result = input.value * 0.01
+        result = input.value * Math.round(0.0254 * 1000) / 1000
         resultDisplay.value = result + unit;
         resultDisplayCont.style.cssText = 
         `
@@ -162,14 +164,92 @@ function calculate(unit) {
         `
     }
 
-    if (btns[1].className.indexOf("active") && optionsUnit.item(3).checked) {
+    if (btns[1].classList.contains("active") && optionsUnit.item(3).checked) {
         unit = 'ft'
-        result = input.value * Math.round(0.0328084 * 1000) / 1000
+        result = input.value * 0.0833333
+        resultDisplay.value = result + unit;
+        resultDisplay.value = resultDisplay.value.slice(0,4) + unit;
+        resultDisplayCont.style.cssText = 
+        `
+            display: flex !important;
+        `
+    }
+
+
+
+    // 
+    // 
+    // 
+    // m to others
+    if (btns[2].classList.contains("active") && optionsUnit.item(0).checked) {
+        unit = 'cm'
+        result = input.value * 100
+        resultDisplay.value = result + unit;
+        resultDisplayCont.removeChild(document.getElementById('result-note'))
+        resultDisplayCont.style.cssText = 
+        `
+            display: flex !important;
+        `
+    }
+
+    if (btns[2].classList.contains("active") && optionsUnit.item(1).checked) {
+        unit = 'in'
+        result = input.value * Math.round(39.37008 * 100) / 100
         resultDisplay.value = result + unit;
         resultDisplayCont.style.cssText = 
         `
             display: flex !important;
         `
     }
+
+    if (btns[2].classList.contains("active") && optionsUnit.item(3).checked) {
+        unit = 'ft'
+        result = input.value * Math.round(3.28084 * 100) / 100
+        resultDisplay.value = result + unit
+        resultDisplayCont.style.cssText = 
+        `
+            display: flex !important;
+        `
+    }
+
+    
+
+
+    // 
+    // 
+    // 
+    // ft to others
+    if (btns[3].classList.contains("active") && optionsUnit.item(0).checked) {
+        unit = 'cm'
+        result = input.value * Math.round(30.48 * 10) / 10
+        resultDisplay.value = result + unit;
+        resultDisplayCont.style.cssText = 
+        `
+            display: flex !important;
+        `
+    }
+
+    if (btns[3].classList.contains("active") && optionsUnit.item(1).checked) {
+        unit = 'in'
+        result = input.value * 12
+        resultDisplay.value = result + unit;
+        resultDisplayCont.removeChild(document.getElementById('result-note'))
+        resultDisplayCont.style.cssText = 
+        `
+            display: flex !important;
+        `
+    }
+
+    if (btns[3].classList.contains("active") && optionsUnit.item(2).checked) {
+        unit = 'm'
+        result = input.value * Math.round(0.3048 * 100) / 100
+        resultDisplay.value = result + unit
+        resultDisplayCont.style.cssText = 
+        `
+            display: flex !important;
+        `
+    }
+
+
 
 }
