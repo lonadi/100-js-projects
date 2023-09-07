@@ -29,15 +29,15 @@ errorMsg3 = document.createElement('div');
 errorMsg3.id = 'error3';
 
 calc.addEventListener('click', () => {
-    if (input.value.trim() === '') {
-        errorMsg.innerHTML = `<p class="alert alert-danger">Input cannot be blank</p> `
-        container.appendChild(errorMsg)
-    } 
+    // if (input.value.trim() === '') {
+    //     errorMsg.innerHTML = `<p class="alert alert-danger">Input cannot be blank</p> `
+    //     container.appendChild(errorMsg)
+    // } 
 
-    if (!reg.test(input.value)) {
-        errorMsg.innerHTML = `<p class="alert alert-danger">Input cannot contain letters</p> `
-        container.appendChild(errorMsg)
-    } 
+    // if (!reg.test(input.value)) {
+    //     errorMsg.innerHTML = `<p class="alert alert-danger">Input cannot contain letters</p> `
+    //     container.appendChild(errorMsg)
+    // } 
     calculate()
 });
 
@@ -249,7 +249,4 @@ function calculate(unit, result) {
             display: flex !important;
         `
     }
-
-
-
 }
