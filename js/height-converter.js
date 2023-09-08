@@ -6,10 +6,6 @@
 
 let container = document.querySelector('.container');
 const input = document.querySelector('#userInput');        
-const cm = document.querySelector("#centimetres");
-const inches = document.querySelector("#inches");
-const feet = document.querySelector("#feet"); 
-const mtr = document.querySelector("#metres");
 const calc = document.querySelector("#calc");
 const reset = document.querySelector("#reset");
 
@@ -39,6 +35,19 @@ calc.addEventListener('click', () => {
     //     container.appendChild(errorMsg)
     // } 
     calculate()
+});
+
+reset.addEventListener('click', () => {
+    for(var i = 0; i<optionsUnit.length; i++) {
+        optionsUnit[i].checked = false;
+    }
+    resultDisplayCont.style.cssText = 
+    `
+        display: none !important;
+    `
+    result = '';
+    input.value = '';
+    input.focus();
 });
 
 
