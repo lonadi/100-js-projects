@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    background-color: #151515;
+    background-color: #151515 !important;
     /* background: linear-gradient(to-right, #000, #151515); */
     /* background: linear-gradient(
         to right,
@@ -21,26 +21,20 @@ body{
         green 60% 80%,
         blue 80%
       ); */
-
-    color: #ffffff;
+    color: #ffffff !important;
     /* background: linear-gradient(#555555, #222222); */
     font-family: 'EB Garamond', serif;
-}
-/* 
-.container{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-} */
+}
+
 
 .container {
     /* background-color: #292929; */
     background: linear-gradient(#0770b6, #222222);
     max-width: 600px;
-    margin: 100px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;

@@ -1,7 +1,7 @@
 const head = document.getElementsByTagName('head')[0];
 
 
-var link, link2, script;
+var link, link2, script, script3;
 link = document.createElement('link');
 link.rel = 'stylesheet';
 link.href = '../all.css';
@@ -18,8 +18,29 @@ script2.src = 'https://code.jquery.com/jquery-3.7.1.min.js'
 script2.integrity = 'sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo='
 script2.crossorigin = 'anonymous';
 
+script3 = document.createElement('script');
+script3.src = 'https://kit.fontawesome.com/ad98cec03b.js';
+script3.crossOrigin = 'anonymous';
+
 
 
 head.appendChild(link);
 head.appendChild(link2);
 head.appendChild(script);
+head.appendChild(script2);
+head.appendChild(script3);
+
+let footer = `
+    <footer>
+        <span id="first-line">Made with 😭 by Leo.</span>
+        <span id="second-line"> </span>
+        <span id="third-line"> </span>
+    </footer>
+`;
+
+
+// <footer>
+//         <p style="text-align: center; color: #00e200;">Made with <i class="fa fa-heart" style="color: #e93434;" aria-hidden="true"></i> by Leo.</p>
+//         <p style="text-align: center;"><a href="https://github.com/liltrapo" style="color: unset;"><i class="fa fa-github" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a></p>
+//         <p style="text-align: center;">Checkout my blog, <a href="http://footykicks.netlify.app" style="color: rgb(51, 51, 255);" target="_blank" rel="noopener noreferrer">footykicks.netlify.app</a></p>
+//     </footer>
