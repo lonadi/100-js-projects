@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background-color: #151515 !importaant; */
+    /* background: linear-gradient(to-right, #000, #151515); */
+    /* background: linear-gradient(
+        to right,
+        red 20%,
+        orange 20% 40%,
+        yellow 40% 60%,
+        green 60% 80%,
+        blue 80%
+      ); */
+    color: #ffffff !important;
+    /* background: linear-gradient(#555555, #222222); */
+    font-family: 'EB Garamond', serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+.container {
+    text-align: center;
+    background-color: white;
+    /* background: linear-gradient(#0770b6, #222222); */
+    max-width: 600px;
+    padding: 20px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    max-width: 90%;
+    padding: 10px;
+}
+
+button {
+    margin: 20px 0;
+    width: 150px;
+    border: 1px solid #ccc;
+    background-color: #0ec5dd;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    /* margin: 10px 0; */
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
