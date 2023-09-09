@@ -33,7 +33,10 @@ head.appendChild(script3);
 let footer = `
     <footer>
         <span id="first-line">Made with 😭 by Leo.</span>
-        <span id="second-line"> </span>
+        <br>
+        <span id="second-line"> <a href="https://github.com/liltrapo" style="color: unset; margin-right: 10px;"><i class="fa fa-github" style="font-size: 25px; cursor: pointer;" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/teezleo" style="color: unset;"><i class="fa fa-twitter" style="font-size: 25px; cursor: pointer;" aria-hidden="true"></i></a>
+        </span>
         <span id="third-line"> </span>
     </footer>
 `;
