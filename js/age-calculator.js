@@ -1,0 +1,1 @@
+document.getElementsByClassName('container')[0].insertAdjacentHTML("afterend", footer);
