@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: -moz-linear-gradient(140deg, rgba(106,234,18,1) 0%, rgba(76,222,246,1) 50%, rgba(104,255,0,1) 100%);
+    background: -webkit-linear-gradient(140deg, rgba(106,234,18,1) 0%, rgba(76,222,246,1) 50%, rgba(104,255,0,1) 100%);
+    background: linear-gradient(140deg, rgba(106,234,18,1) 0%, rgba(76,222,246,1) 50%, rgba(104,255,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6aea12",endColorstr="#68ff00",GradientType=1);
+    font-family: 'Merienda', monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.342);
+    /* background: linear-gradient(#0770b6, #222222); */
+    max-width: 600px;
+    padding: 20px;
+    color: rgb(19, 61, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+    position: relative;
+    height: 40px;
+    padding: 10px;
+    width: 70%;
+    background: rgba(255,255,255,0.3);
+    border-color: rgba(255,255,255,0.5);
+    font-size: 18px;
+    border-radius: 10px;
+    color: darkgreen;
+    outline: none;
+}
+
+button {
+    margin: 20px 0;
+    width: 150px;
+    border: 1px solid #ccc;
+    background-color: #0ec5dd;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    /* margin: 10px 0; */
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.error {
+    color: red;
+}

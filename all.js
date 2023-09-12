@@ -1,5 +1,6 @@
 const head = document.getElementsByTagName('head')[0];
 
+document.title = document.title + ' | Leo100js'
 
 var link, link2, script, script3;
 link = document.createElement('link');
@@ -14,9 +15,7 @@ script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js';
 
 script2 = document.createElement('script');
-script2.src = 'https://code.jquery.com/jquery-3.7.1.min.js'
-script2.integrity = 'sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo='
-script2.crossorigin = 'anonymous';
+script2.src = 'https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js'
 
 script3 = document.createElement('script');
 script3.src = 'https://kit.fontawesome.com/ad98cec03b.js';
@@ -32,7 +31,7 @@ head.appendChild(script3);
 
 let footer = `
     <footer>
-        <span id="first-line">Made with 😭 by Leo.</span>
+        <span id="first-line">Made with 😭 by Leo. </span>
         <span id="second-line"> <a href="https://github.com/liltrapo" style="color: unset; margin-right: 10px;"><i class="fa fa-github" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a>
         <a href="https://twitter.com/teezleo" style="color: unset"><i class="fa-brands fa-x-twitter" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a>
         </span>

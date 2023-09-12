@@ -25,10 +25,23 @@ errorMsg3 = document.createElement('div');
 errorMsg3.id = 'error3';
 
 calc.addEventListener('click', () => {
-    // if (input.value.trim() === '') {
-    //     errorMsg.innerHTML = `<p class="alert alert-danger">Input cannot be blank</p> `
-    //     container.appendChild(errorMsg)
-    // } 
+    if (input.value.trim() === '') {
+        errorMsg.innerHTML = `<p class="alert alert-danger">Input cannot be blank</p> `
+        container.appendChild(errorMsg)
+        $('#error1').fadeIn(100);
+        setTimeout(removeError, 3000)
+    } else if (input.value <= 0 || isNaN(input.value)) {
+        errorMsg.innerHTML = `<p class="alert alert-danger">Please enter a valid number</p> `
+        container.appendChild(errorMsg)
+        $('#error1').fadeIn(100);
+        setTimeout(removeError, 3000)
+    }
+
+    function removeError() {
+        $('#error1').fadeOut(500);
+
+    }
+
 
     // if (!reg.test(input.value)) {
     //     errorMsg.innerHTML = `<p class="alert alert-danger">Input cannot contain letters</p> `
