@@ -38,6 +38,8 @@ let footer = `
     </footer>
 `;
 
+// document.getElementsByClassName('container')[0].insertAdjacentHTML("afterend", footer);
+
 
 // <footer>
 //         <p style="text-align: center; color: #00e200;">Made with <i class="fa fa-heart" style="color: #e93434;" aria-hidden="true"></i> by Leo.</p>
