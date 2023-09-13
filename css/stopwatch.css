@@ -55,5 +55,9 @@ button:hover {
 }
 
 #start {
-    
+    background-color: #00bd00;
+}
+
+#reset {
+    background-color: #ff0303;
 }
