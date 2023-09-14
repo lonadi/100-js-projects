@@ -12,13 +12,57 @@
     <!-- ipconfig/all -->
     <!-- make a pixelated website -->
     <!-- display them in a grid -->
+    <!-- bring back fk and make it better with bootstrap and jquery or react idk -->
     <header>
         <h1 class="text-center">Leo's Projects</h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Projects</a>
+            <a href="">About</a>
+        </nav>
     </header>
-    <main class="container">
+    <main class="container">    
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card project-card h-100">
+                <img src="./img/prototype.png" class="card-img-top preview-img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Height converter</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body project-details">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
         <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-        <div class="row cards-cont">
-            <div class="col-6 col-md-4 project-card">
+        <!-- <div class="row cards-cont">
+            <div class="col-6 col-md-4 project-card card hoverable">
                 <header class="project-header">
                     <img src="./img/prototype.png" alt="Preview Image" class="preview-img">
                 </header>
@@ -33,7 +77,7 @@
                     <span id="second-line"> <a href="https://github.com/liltrapo" style="color: unset;"><i class="fa fa-github" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col-6 col-md-4 project-card">
+            <div class="col-6 col-md-4 project-card card">
                 <header class="project-header">
                     <img src="./img/icon/leocs-high-resolution-color-logo.png" alt="Preview Image" class="preview-img">
                 </header>
@@ -42,7 +86,7 @@
                     
                 </div>
             </div>
-            <div class="col-6 col-md-4 project-card">
+            <div class="col-6 col-md-4 project-card card">
                 <header class="project-header">
                     <img src="./img/prototype.png" alt="Preview Image" class="preview-img">
                 </header>
@@ -51,7 +95,7 @@
                     
                 </div>
             </div>
-            <div class="col-6 col-md-4 project-card">
+            <div class="col-6 col-md-4 project-card card">
                 <header class="project-header">
                     <img src="./img/prototype.png" alt="Preview Image" class="preview-img">
                 </header>
@@ -60,7 +104,7 @@
                     
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
     <br>
     <a href="./html/weight-converter.html">Weight converter</a>
