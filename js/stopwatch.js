@@ -74,3 +74,5 @@ function startTime() {
 };
 
 document.getElementsByClassName('container')[0].insertAdjacentHTML("afterend", footer);
+
+// next challenge. add laps with sessionStorage;

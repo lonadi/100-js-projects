@@ -6,7 +6,6 @@
 
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: 'Labrada', Courier, monospace;
     min-height: 100vh;
@@ -18,21 +17,26 @@ body {
     color: #f0f0f0;
     max-width: 600px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 300px;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 20px 10px #464e7a;
+    -moz-box-shadow: 0px 0px 20px 10px #464e7a;
+    box-shadow: 0px 0px 20px 10px #464e7a;
 }
 
 .display {
     font-size: 60px;
     font-family: monospace;
     display: flex;
+    max-width: 100%;
 }
 
 .btn-group {
     position: relative;
     top: 20px;
+    max-width: 100%;
 }
 
 .btn-group button {
@@ -59,5 +63,13 @@ button:hover {
 }
 
 #reset {
-    background-color: #ff0303;
+    background-color: #d80101;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .display {
+        font-size: 10vw;
+    }
 }
