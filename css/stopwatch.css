@@ -10,6 +10,7 @@ body {
     font-family: 'Labrada', Courier, monospace;
     min-height: 100vh;
     background-color: #3d4055;
+    background-color: #252734;
 }
 
 .container {
@@ -21,9 +22,9 @@ body {
     flex-direction: column;
     height: 300px;
     justify-content: center;
-    -webkit-box-shadow: 0px 0px 20px 10px #464e7a;
-    -moz-box-shadow: 0px 0px 20px 10px #464e7a;
-    box-shadow: 0px 0px 20px 10px #464e7a;
+    -webkit-box-shadow: 0px 0px 20px 10px #444650;
+    -moz-box-shadow: 0px 0px 20px 10px #444650;
+    box-shadow: 0px 0px 10px 2px #444650;
 }
 
 .display {
@@ -66,9 +67,16 @@ button:hover {
     background-color: #d80101;
 }
 
+footer {
+    border-top: 2px solid #fcfcfc;
+    padding: 10px;
+}
 
 
 @media screen and (max-width: 600px) {
+    .container {
+        /* height: 1000px; */
+    }
     .display {
         font-size: 10vw;
     }
