@@ -1,67 +1,53 @@
-#title {
-    font-size: 1.5rem;
-    font-weight: 300;
-  }
-  
-  .icon {
-    font-size: 0.9rem;
-    display: inline-flex;
-    background: #d8d8d8;
-    border-radius: 3px;
-    margin-right: 5px;
-    margin-bottom: 15px;
-    span {
-      border-radius: 5px;
-      padding: 3px 5px;
-    }
-  }
-  
-  .react {
-    background: #bad5f5;
-    span::after {
-      content: "React.js";
-    }
-  }
-  
-  .express {
-    background: #f2c986;
-    span::after {
-      content: "Express";
-    }
-  }
-  
-  .node {
-    background: #e1c1c1;
-    span::after {
-      content: "Node.js";
-    }
-  }
-  
-  .python {
-    background: #eadd86;
-    span::after {
-      content: "Python";
-    }
-  }
-  
-  .django {
-    background: #afeae5;
-    span::after {
-      content: "Django";
-    }
-  }
-  
-  .card {
-    a {
-      padding-right: 15px;
-    }
-  }
-  
-  .github {
-    color: #739150;
-  }
-  
-  .status {
-    color: #7699c2;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: auto;
+  padding: auto;
+  background-color: #252734 !important;
+  color: #ffffff !important;
+  /* font-family: 'Pirata One', cursive !important; */
+}
+
+.container {
+  background-color: #252734 !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #ffffff !important;
+}
+
+header.project-header .preview-img {
+  width: 100%;
+  /* max-width: 100%; */
+  box-shadow: 0px 0px 10px 3px #999;
+  height: 150px;
+  object-fit: cover;
+  overflow: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.project-card {
+    height: 350px;
+    margin: 50px 0px;
+    /* border: 1px solid black; */
+}
+
+header.project-header {
+    background: #1b1d27;
+}
