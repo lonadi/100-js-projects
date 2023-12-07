@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: cursive;
+    min-height: 100vh;
+    background-color: #53a034;
+    justify-content: center;
+}
+
+
+.calendar {
+    background-color: white;
+    text-align: center;
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.month {
+    background-color: #00aeff;
+    margin: 0;
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    font-size: 30px;
+}
+
+.weekday {
+    color: darkgray;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.day {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.year {
+    margin: 20px 0;
+    font-size: 20px;
+    color: darkgray;
+    font-weight: 500;
+}

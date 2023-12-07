@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,59 +8,95 @@
     <link rel="stylesheet" href="./index.css">
     <script src="./index.js"></script>
     <script src="./all.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 </head>
+
 <body>
     <!-- ipconfig/all -->
-    <!-- make a pixelated website -->
+    <!-- make a pixe999999lated website -->
     <!-- display them in a grid -->
     <!-- bring back fk and make it better with bootstrap and jquery or react idk -->
+    <!-- about talking about reasons why i did the project(to improve my skills) -->
     <header>
-        <h1 class="text-center">Leo's Projects</h1>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Projects</a>
-            <a href="">About</a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/icon/align-left.svg" alt="logo" width="100"
+                        class="logo d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item border-bottom">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item border-bottom">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item border-bottom">
+                            <a class="nav-link">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
-    <main class="container">    
+    <main class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-              <div class="card project-card h-100">
-                <img src="./img/prototype.png" class="card-img-top preview-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Height converter</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="card project-card h-100">
+                    <img src="./img/prototype.png" class="card-img-top preview-img" alt="...">
+                    <div class="card-body">
+                        <div class="project-tags">
+                            <span id="html"></span>
+                            <span id="css"></span>
+                            <span id="js"></span>
+                        </div>
+                        <h5 class="card-title">Height converter</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
                 </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body project-details">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body project-details">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
                 </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
                 </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
         <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
         <!-- <div class="row cards-cont">
             <div class="col-6 col-md-4 project-card card hoverable">
@@ -116,4 +153,5 @@
     <a href="./html/tip-calculator.html">Tip calculator</a>
     <br>
 </body>
+
 </html>
