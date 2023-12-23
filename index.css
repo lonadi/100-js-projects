@@ -42,10 +42,9 @@ nav .nav-link {
 
 
 nav .nav-link.active {
-  color: #188ef8 !important;
+  color: #ffffff !important;
   /* text-align: center; */
 }
-
 
 nav .btn-outline-primary {
   border-color: var(--secondary-color) !important;
@@ -210,10 +209,10 @@ li.nav-item.border-bottom:last-child {
   border-color: #9d9d9d !important;
 }
 
-li.nav-item a:hover {
-  color: #188ef8 !important;
-}
-
 li.nav-item:focus {
   border: 1px solid red !important;
+}
+
+li.nav-item.active {
+    background: #00d5d2;
 }

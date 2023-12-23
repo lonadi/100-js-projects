@@ -23,7 +23,7 @@ body {
 }
 
 .calendar{
-    background-color: #006e4a;
+    background-color: #2f2f2f;
     color: lightgray;
     width: 450px;
     height: 520px;
@@ -34,7 +34,7 @@ body {
 .month{
     width: 100%;
     height: 120px;
-    background-color: #1977a3;
+    background-color: #838383;
     display: flex;
     justify-content: center;
     align-items: center;
