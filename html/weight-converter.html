@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+<head> <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52QKVCYRKC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-52QKVCYRKC');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weight Converter</title>
@@ -8,12 +17,13 @@
     <link rel="stylesheet" href="../css/weight-converter.css">
 
 </head>
+
 <body>
     <div class="container">
         <h1>Weight Converter</h1>
         <div class="input-container">
             <label for="weight-pounds">Pounds: </label>
-            <input type="number" id="input" placeholder="Enter value">    
+            <input type="number" id="input" placeholder="Enter value">
         </div>
         <p>Kg = <span id="result"></span> </p>
         <p id="error" class="error"></p>
@@ -21,4 +31,5 @@
 
     <script src="../js/weight-converter.js"></script>
 </body>
+
 </html>

@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+<head> <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52QKVCYRKC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-52QKVCYRKC');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Calendar</title>
     <script src="../all.js"></script>
     <link rel="stylesheet" href="../css/mini-calendar.css">
 </head>
+
 <body>
     <div class="calendar">
         <div class="month" id="month"></div>
         <div class="weekday" id="weekday"></div>
         <div class="day" id="day"></div>
         <div class="year" id="year"></div>
-    </div>        
+    </div>
     <script src="../js/mini-calendar.js"></script>
 </body>
+
 </html>

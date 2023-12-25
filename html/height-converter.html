@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+<head> <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52QKVCYRKC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-52QKVCYRKC');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Height Converter</title>
     <script src="../all.js"></script>
     <link rel="stylesheet" href="../css/height-converter.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Height Converter</h1>
@@ -28,18 +38,18 @@
 
             <nav aria-label="...">
                 <ul class="pagination pagination-md">
-                  <li class="page-item" aria-current="page">
-                    <span class="page-link choices active">cm</span>
-                  </li>
-                  <li class="page-item"><a class="page-link choices" href="#">in</a></li>
-                  <li class="page-item"><a class="page-link choices" href="#">m</a></li>
-                  <li class="page-item"><a class="page-link choices" href="#">ft</a></li>
+                    <li class="page-item" aria-current="page">
+                        <span class="page-link choices active">cm</span>
+                    </li>
+                    <li class="page-item"><a class="page-link choices" href="#">in</a></li>
+                    <li class="page-item"><a class="page-link choices" href="#">m</a></li>
+                    <li class="page-item"><a class="page-link choices" href="#">ft</a></li>
                 </ul>
-              </nav>
-    
+            </nav>
+
         </div>
-        
-        
+
+
         <br>
         <p class="text-center fs-4">Convert to</p>
         <div class="options">
@@ -66,6 +76,7 @@
         </div>
 
     </div>
-<script src="../js/height-converter.js"></script>
+    <script src="../js/height-converter.js"></script>
 </body>
+
 </html>
