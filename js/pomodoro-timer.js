@@ -41,4 +41,3 @@ startEl.addEventListener("click", startTimer);
 stopEl.addEventListener("click", stopTimer);
 resetEl.addEventListener("click", resetTimer);
 
-document.getElementsByClassName('container')[0].insertAdjacentHTML("afterend", footer);

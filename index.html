@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52QKVCYRKC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-52QKVCYRKC');
-    </script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>100 js projects</title>
@@ -25,7 +17,7 @@
     <!-- display them in a grid -->
     <!-- bring back fk and make it better with bootstrap and jquery or react idk -->
     <!-- about talking about reasons why i did the project(to improve my skills) -->
-    <header>
+    <header class="sticky-lg-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -33,12 +25,12 @@
                         class="logo d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <ul class="navbar-nav me-auto mb-2 mt-2 text-center mb-lg-0">
                         <li class="nav-item active border-bottom">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
@@ -60,8 +52,10 @@
     <main class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card project-card h-100">
-                    <img src="./img/prototype.png" class="card-img-top preview-img" alt="...">
+                <div class="card project-card h-100 ">
+                    <div class="card-header">
+                        <img src="./100JS screenshots/Height Converter _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
+                    </div>
                     <div class="card-body">
                         <div class="project-tags">
                             <span id="html"></span>
@@ -79,7 +73,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="..." class="card-img-top" loading="lazy" alt="...">
                     <div class="card-body project-details">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional
@@ -92,7 +86,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="..." class="card-img-top" loading="lazy" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -104,6 +98,14 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col">
+                <div class="card h-100">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
         </div>
         <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
         <!-- <div class="row cards-cont">
@@ -151,15 +153,11 @@
             </div>
         </div> -->
     </main>
-    <br>
-    <a href="./html/weight-converter.html">Weight converter</a>
-    <br>
-    <a href="./html/age-calculator.html">Age calculator</a>
-    <br>
-    <a href="./html/stopwatch.html">Stopwatch</a>
-    <br>
-    <a href="./html/tip-calculator.html">Tip calculator</a>
-    <br>
-</body>
 
+    <div class="w-full text-center pt-5"><a role="button" class="btn btn-primary py-2 mx-auto rounded-lg  transition-all px-4 font-medium projects-link" href="/projects">See All Projects</a></div>
+
+    <footer>
+
+    </footer>
+</body>
 </html>

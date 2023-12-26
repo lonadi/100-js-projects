@@ -9,7 +9,6 @@
     --secondary-color: #00d1cd;
 }
 
-
 *, *::before , *::after {
     box-sizing: border-box;
     padding: 0;

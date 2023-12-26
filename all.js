@@ -2,7 +2,7 @@ const head = document.getElementsByTagName('head')[0];
 
 document.title = document.title + ' | Leo100js'
 
-var link, link2, script, script3;
+var link, link2, script, script3, script4;
 link = document.createElement('link');
 link.rel = 'stylesheet';
 link.href = '../all.css';
@@ -21,6 +21,14 @@ script3 = document.createElement('script');
 script3.src = 'https://kit.fontawesome.com/ad98cec03b.js';
 script3.crossOrigin = 'anonymous';
 
+script4 = document.createElement('script');
+script4.src = 'https://www.googletagmanager.com/gtag/js?id=G-52QKVCYRKC';
+script4.async;
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+
+gtag('config', 'G-52QKVCYRKC');
 
 
 head.appendChild(link);
@@ -28,9 +36,10 @@ head.appendChild(link2);
 head.appendChild(script);
 head.appendChild(script2);
 head.appendChild(script3);
+head.appendChild(script4);
 
 let footer = `
-    <footer>
+    <footer id="creds">
         <span id="first-line">Made with 😭 by Leo. </span>
         <span id="second-line"> <a href="https://github.com/liltrapo" style="color: unset;"><i class="fa fa-github" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a>
        <!-- <a href="https://twitter.com/teezleo" style="color: unset"><i class="fa-brands fa-x-twitter" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a> -->
@@ -41,6 +50,9 @@ let footer = `
 // margin-right: 10px; on github icon
 // document.getElementsByClassName('container')[0].insertAdjacentHTML("afterend", footer);
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementsByClassName('container')[0].insertAdjacentHTML("afterend", footer);
+});
 
 // <footer>
 //         <p style="text-align: center; color: #00e200;">Made with <i class="fa fa-heart" style="color: #e93434;" aria-hidden="true"></i> by Leo.</p>

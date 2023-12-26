@@ -40,6 +40,6 @@ for (let i = 1; i <= lastDay; i++) {
 
 daysEl.innerHTML = days;
 
-document.getElementsByClassName('container')[0].insertAdjacentHTML("afterend", footer);
+
 
 // sort out dates with 31, 30 and 29 or 28 days during a leap year

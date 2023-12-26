@@ -32,11 +32,11 @@ function startTime() {
     tens++;
     if (tens <= 9) {
         outputSec.innerHTML = '0' + tens;
-    } 
+    }
 
     if (tens > 9) {
         outputTens.innerHTML = tens;
-    } 
+    }
 
     if (tens > 99) {
         seconds++;
@@ -47,32 +47,32 @@ function startTime() {
 
     if (seconds >= 9) {
         outputSec.innerHTML = seconds;
-    } 
+    }
 
     if (seconds <= 9) {
         outputSec.innerHTML = '0' + seconds;
-    } 
+    }
 
     if (seconds > 59) {
         mins++
         outputMin.innerHTML = '0' + mins;
         seconds = 0;
         outputSec.innerHTML = '0' + seconds
-    } 
+    }
 
     if (mins > 59) {
         hours++
         outputHrs.innerHTML = '0' + hours;
         mins = 0;
         outputMin.innerHTML = '0' + mins
-    }  
+    }
 
     if (hours > 100) {
         clearInterval(Interval);
     }
-    
+
 };
 
-document.getElementsByClassName('container')[0].insertAdjacentHTML("afterend", footer);
+
 
 // next challenge. add laps with sessionStorage;

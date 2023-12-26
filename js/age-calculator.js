@@ -9,6 +9,9 @@ function calculateAge() {
     } else {
         const age = getAge(birthdayValue);
         result.innerText = `You are ${age} ${age > 1 ? "years" : "year"} old`;
+        if (age == 0) {
+            result.innerText = 'You are 0 years old'
+        }
     }
 }
 
@@ -33,4 +36,3 @@ calc.addEventListener("click", calculateAge);
 
 
 
-document.getElementsByClassName('container')[0].insertAdjacentHTML("afterend", footer);
