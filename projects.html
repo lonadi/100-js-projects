@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 js projects</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <script src="./all.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+</head>
+
+<body>
+    <!-- ipconfig/all -->
+    <!-- make a pixe999999lated website -->
+    <!-- display them in a grid -->
+    <!-- bring back fk and make it better with bootstrap and jquery or react idk -->
+    <!-- about talking about reasons why i did the project(to improve my skills) -->
+    <header class="sticky-lg-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/icon/align-left.svg" alt="logo" width="100"
+                        class="logo d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- make the search query function -->
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <ul class="navbar-nav me-auto mb-2 mt-2 text-center mb-lg-0">
+                        <li class="nav-item border-bottom">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active border-bottom">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item border-bottom">
+                            <a class="nav-link">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card project-card h-100" onclick="location.href = './html/height-converter.html';">
+                    <div class="card-header">
+                        <img src="./100JS screenshots/Height Converter _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <div class="project-tags mb-3">
+                            <span id="html"></span>
+                            <span id="css"></span>
+                            <span id="js"></span>
+                        </div>
+                        <h5 class="card-title">Height converter</h5>
+                        <p class="card-text">The aim of this project is to create a functional height converter that is capable of converting between centimetres, inches, metres & feet.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Creation Date: 25|12|23</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
