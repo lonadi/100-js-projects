@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #ffffff !important;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+.container {
+    text-align: center;
+    background-color: white;
+    max-width: 600px;
+    padding: 20px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.choices button {
+    min-width: 100px;
+    padding: 17px 20px;
+    margin: 0 10px;
+    border: none;
+    font-size: 40px;
+}
+
+#rock {
+    background-color: #ff2b2b;
+}
+
+#paper {
+    background-color: #2424ff;
+}
+
+#scissors {
+    background-color: #2eff2e;
+}
