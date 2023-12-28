@@ -7,6 +7,7 @@
     <title>100 js projects</title>
     <link rel="stylesheet" href="./index.css">
     <script src="./index.js"></script>
+    <link rel="stylesheet" href="./all.css">
     <script src="./all.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 </head>
@@ -32,10 +33,10 @@
                 <div class="collapse navbar-collapse" id="navbar-toggler">
                     <ul class="navbar-nav me-auto mb-2 mt-2 text-center mb-lg-0">
                         <li class="nav-item active border-bottom">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item border-bottom">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="./projects.html">Projects</a>
                         </li>
                         <li class="nav-item border-bottom">
                             <a class="nav-link">About</a>
@@ -52,23 +53,25 @@
     <main class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card project-card h-100" onclick="location.href = './html/height-converter.html';">
-                    <div class="card-header">
-                        <img src="./100JS screenshots/Height Converter _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <div class="project-tags mb-3">
-                            <span id="html"></span>
-                            <span id="css"></span>
-                            <span id="js"></span>
+                <a href="./html/height-converter.html" class="project-link" target="_blank">
+                    <div class="card project-card h-100" onclick="location.href = './html/height-converter.html';" target="_blank">
+                        <div class="card-header">
+                            <img src="./100JS screenshots/Height Converter _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
                         </div>
-                        <h5 class="card-title">Height converter</h5>
-                        <p class="card-text">The aim of this project is to create a functional height converter that is capable of converting between centimetres, inches, metres & feet.</p>
+                        <div class="card-body">
+                            <div class="project-tags mb-3">
+                                <span id="html"></span>
+                                <span id="css"></span>
+                                <span id="js"></span>
+                            </div>
+                            <h5 class="card-title">Height converter</h5>
+                            <p class="card-text">The aim of this project is to create a functional height converter that is capable of converting between centimetres, inches, metres & feet.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creation Date: 25/12/23</small>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Creation Date: 25|12|23</small>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </main>
