@@ -1,53 +1,55 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
+    align-items: center;
+    min-height: 100vh;
+    background: snow;
 }
-
-/* .shape {
-    text-align: center;
-} */
 
 .container {
-    background: none !important;
-    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
 }
 
+.container #shape {
+    width: 75vmin;
+    height: 75vmin;
+    animation: shape 5s ease-in-out infinite both;
+}
 
-@keyframes shapeShift {
-    0% {
-        width: 100px;
-        height: 100px;
-        background-color: blue;
-        border-radius: 0;
-    }
+@keyframes shape {
 
-    50% {
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        border-radius: 50%;
-    }
-
+    0%,
     100% {
-        width: 0;
-        height: 0;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-bottom: 87px solid green;
-        background-color: transparent;
+        clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+        background: #da942b;
     }
-}
 
-#shape {
-    animation: shapeShift 4s infinite; /* Change 4s to adjust the duration of one cycle */
+    14.29%,
+    28.57% {
+        clip-path: polygon(50% 0, 50% 0, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0 60%, 10% 20%);
+        background: #bfbf40;
+    }
+
+    42.86% {
+        clip-path: polygon(50% 0, 50% 0, 100% 25%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0 25%);
+        background: #40bf40;
+    }
+
+    57.14% {
+        clip-path: polygon(50% 0, 50% 0, 100% 38%, 100% 38%, 82% 100%, 18% 100%, 0 38%, 0 38%);
+        background: #40bfbf;
+    }
+
+    71.43% {
+        clip-path: polygon(50% 0, 50% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+        background: #4040bf;
+    }
+
+    85.71% {
+        clip-path: polygon(50% 0, 50% 0, 50% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 50% 0);
+        background: #bf40bf;
+    }
 }
