@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     color: #ffffff !important;
     height: 100vh;
     display: flex;
@@ -15,7 +16,6 @@ body{
     align-items: center;
     font-weight: 600;
 }
-
 
 .container {
     text-align: center;
@@ -30,19 +30,17 @@ body{
     flex-direction: column;
 }
 
-
-
 #result {
     font-size: 1.5rem;
     margin-top: 20px;
 }
 
 .choices button {
-    min-width: 100px;
+    width: 150px;
     padding: 17px 20px;
     margin: 0 10px;
     border: none;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 #rock {
@@ -55,4 +53,27 @@ body{
 
 #scissors {
     background-color: #2eff2e;
+}
+
+@media screen and (max-width: 600px) {
+    .choices button {
+        padding: 10px;
+        width: 100px;
+        font-size: 50px;
+    }
+}
+
+.scores {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+#ps-val {
+    color: #00dce4;
+}
+
+#cs-val {
+    color: #ff2828;
 }
