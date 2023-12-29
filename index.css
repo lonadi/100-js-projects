@@ -75,6 +75,7 @@ nav .form-control:focus {
 
 .preview-img {
   max-width: 500px;
+  height: 200px;
   max-height: 250px;
   object-fit: cover;
   overflow: auto;
@@ -139,8 +140,10 @@ header.project-header {
   }
 }
 
-.card .card-body {
+.card .card-title {
   font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .project-tags span {
