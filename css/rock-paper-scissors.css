@@ -37,6 +37,7 @@ body {
 
 .choices button {
     width: 150px;
+    height: 150px;
     padding: 17px 20px;
     margin: 0 10px;
     border: none;
@@ -45,19 +46,23 @@ body {
 
 #rock {
     background-color: #ff2b2b;
+    border-radius: 50%;
 }
 
 #paper {
     background-color: #2424ff;
+    border-radius: 50%;
 }
 
 #scissors {
     background-color: #2eff2e;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 600px) {
     .choices button {
         padding: 10px;
+        height: 100px;
         width: 100px;
         font-size: 50px;
     }
@@ -76,4 +81,8 @@ body {
 
 #cs-val {
     color: #ff2828;
+}
+
+div#moves {
+    font-size: 20px;
 }
