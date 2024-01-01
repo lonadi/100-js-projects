@@ -2,7 +2,7 @@ const head = document.getElementsByTagName('head')[0];
 
 document.title = document.title + ' | Leo100js'
 
-var link, link2, link3, script, script3, script4;
+var link, link2, script, script3, script4, script5;
 link = document.createElement('link');
 link.rel = 'stylesheet';
 link.href = '../all.css';
@@ -10,10 +10,6 @@ link.href = '../all.css';
 link2 = document.createElement('link');
 link2.rel = 'stylesheet';
 link2.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css';
-
-link3 = document.createElement('meta');
-link3.name = 'google-adsense-account';
-link3.content = 'ca-pub-5017336691227548';
 
 script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js';
@@ -34,14 +30,17 @@ gtag('js', new Date());
 
 gtag('config', 'G-52QKVCYRKC');
 
+script5.async;
+script5.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5017336691227548'
+script5.crossorigin = 'anonymous';
 
 head.appendChild(link);
 head.appendChild(link2); 
-head.appendChild(link3);
 head.appendChild(script);
 head.appendChild(script2);
 head.appendChild(script3);
 head.appendChild(script4);
+head.appendChild(script5);
 
 let footer = `
     <footer id="creds">
