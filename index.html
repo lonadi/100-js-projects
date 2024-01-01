@@ -18,6 +18,7 @@
     <!-- display them in a grid -->
     <!-- bring back fk and make it better with bootstrap and jquery or react idk -->
     <!-- about talking about reasons why i did the project(to improve my skills) -->
+    <!-- little bug in the search bar. it searches even the description instead of only the title -->
     <header class="sticky-lg-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -25,9 +26,8 @@
                     <img src="./img/icon/align-left.svg" alt="logo" width="100"
                         class="logo d-inline-block align-text-top">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                    aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-toggler">
@@ -39,25 +39,26 @@
                             <a class="nav-link" href="./projects.html">Projects</a>
                         </li>
                         <li class="nav-item border-bottom">
-                            <a class="nav-link">About</a>
+                            <a class="nav-link" href="./about.html">About</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                        <input class="form-control me-2" id="search" type="search" placeholder="Search"
+                            aria-label="Search">
                     </form>
                 </div>
             </div>
         </nav>
     </header>
     <main class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="project-list">
 
-            <div class="col">
+            <div class="col project-item">
                 <a href="./html/month-calendar.html" target="_blank" class="project-link">
                     <div class="card project-card h-100">
                         <div class="card-header">
-                            <img src="./100JS screenshots/Month calendar _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
+                            <img src="./100JS screenshots/Month calendar _ Leo100js.jpg"
+                                class="card-img-top preview-img" loading="lazy" alt="...">
                         </div>
                         <div class="card-body">
                             <div class="project-tags mb-3">
@@ -66,7 +67,8 @@
                                 <span id="js"></span>
                             </div>
                             <h5 class="card-title">Month calendar</h5>
-                            <p class="card-text">This calendar is capable of highlighting the exact month, week, year and day of the week.</p>
+                            <p class="card-text">This calendar is capable of highlighting the exact month, week, year
+                                and day of the week.</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Creation Date: 24/12/23</small>
@@ -75,11 +77,12 @@
                 </a>
             </div>
 
-            <div class="col">
+            <div class="col project-item">
                 <a href="./html/height-converter.html" target="_blank" class="project-link">
                     <div class="card project-card h-100">
                         <div class="card-header">
-                            <img src="./100JS screenshots/Height Converter _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
+                            <img src="./100JS screenshots/Height Converter _ Leo100js.jpg"
+                                class="card-img-top preview-img" loading="lazy" alt="...">
                         </div>
                         <div class="card-body">
                             <div class="project-tags mb-3">
@@ -88,7 +91,8 @@
                                 <span id="js"></span>
                             </div>
                             <h5 class="card-title">Height converter</h5>
-                            <p class="card-text">The aim of this project is to create a functional height converter that is capable of converting between centimetres, inches, metres & feet.</p>
+                            <p class="card-text">The aim of this project is to create a functional height converter that
+                                is capable of converting between centimetres, inches, metres & feet.</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Creation Date: 25/12/23</small>
@@ -97,11 +101,12 @@
                 </a>
             </div>
 
-            <div class="col">
+            <div class="col project-item">
                 <a href="./html/stopwatch.html" target="_blank" class="project-link">
                     <div class="card project-card h-100">
                         <div class="card-header">
-                            <img src="./100JS screenshots/Stopwatch _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
+                            <img src="./100JS screenshots/Stopwatch _ Leo100js.jpg" class="card-img-top preview-img"
+                                loading="lazy" alt="...">
                         </div>
                         <div class="card-body">
                             <div class="project-tags mb-3">
@@ -110,7 +115,8 @@
                                 <span id="js"></span>
                             </div>
                             <h5 class="card-title">Stopwatch</h5>
-                            <p class="card-text">A stopwatch with basic functions like the start, stop & reset functions.</p>
+                            <p class="card-text">A stopwatch with basic functions like the start, stop & reset
+                                functions.</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Creation Date: 26/12/23</small>
@@ -119,11 +125,12 @@
                 </a>
             </div>
 
-            <div class="col">
+            <div class="col project-item">
                 <a href="./html/notes-app.html" target="_blank" class="project-link">
                     <div class="card project-card h-100">
                         <div class="card-header">
-                            <img src="./100JS screenshots/Notes App _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
+                            <img src="./100JS screenshots/Notes App _ Leo100js.jpg" class="card-img-top preview-img"
+                                loading="lazy" alt="...">
                         </div>
                         <div class="card-body">
                             <div class="project-tags mb-3">
@@ -132,7 +139,8 @@
                                 <span id="js"></span>
                             </div>
                             <h5 class="card-title">Notes App</h5>
-                            <p class="card-text">This mini application allows users to write and store notes on the browsers localStorage, with the option of editing the text content or deleting it.</p>
+                            <p class="card-text">This mini application allows users to write and store notes on the
+                                browsers localStorage, with the option of editing the text content or deleting it.</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Creation Date: 27/12/23</small>
@@ -141,11 +149,12 @@
                 </a>
             </div>
 
-            <div class="col">
+            <div class="col project-item">
                 <a href="./html/dice-roll.html" target="_blank" class="project-link">
                     <div class="card project-card h-100">
                         <div class="card-header">
-                            <img src="./100JS screenshots/Dice roll simulator _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
+                            <img src="./100JS screenshots/Dice roll simulator _ Leo100js.jpg"
+                                class="card-img-top preview-img" loading="lazy" alt="...">
                         </div>
                         <div class="card-body">
                             <div class="project-tags mb-3">
@@ -154,7 +163,11 @@
                                 <span id="js"></span>
                             </div>
                             <h5 class="card-title">Dice roll simulator</h5>
-                            <p class="card-text">The Dice Roll Simulator project features a central dice and a "Roll dice" button. Clicking on the button initiates an animation and produces a random number displayed on the dice and appended in a historical list. The button has an event listener that randomly generates a number, records it in an array and updates the history list.</p>
+                            <p class="card-text">The Dice Roll Simulator project features a central dice and a "Roll
+                                dice" button. Clicking on the button initiates an animation and produces a random number
+                                displayed on the dice and appended in a historical list. The button has an event
+                                listener that randomly generates a number, records it in an array and updates the
+                                history list.</p>
                             <br>
                             <p>I'm just waffling at this point 😂</p>
                         </div>
@@ -165,11 +178,12 @@
                 </a>
             </div>
 
-            <div class="col">
+            <div class="col project-item">
                 <a href="./html/stopwatch.html" target="_blank" class="project-link">
                     <div class="card project-card h-100">
                         <div class="card-header">
-                            <img src="./100JS screenshots/Rock, Paper, Scissors _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
+                            <img src="./100JS screenshots/Rock, Paper, Scissors _ Leo100js.jpg"
+                                class="card-img-top preview-img" loading="lazy" alt="...">
                         </div>
                         <div class="card-body">
                             <div class="project-tags mb-3">
@@ -178,7 +192,10 @@
                                 <span id="js"></span>
                             </div>
                             <h5 class="card-title">Rock, Paper, Scissors</h5>
-                            <p class="card-text">The Rock, Paper, Scissors project is similar to the usual game that you've probably played with someone at least once in your lifetime. You play against the computer who chooses randomly from an array containing 3 elements. Can you defeat the computer after 20 moves?!</p>
+                            <p class="card-text">The Rock, Paper, Scissors project is similar to the usual game that
+                                you've probably played with someone at least once in your lifetime. You play against the
+                                computer who chooses randomly from an array containing 3 elements. Can you defeat the
+                                computer after 20 moves?!</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Creation Date: 29/12/23</small>
@@ -186,14 +203,16 @@
                     </div>
                 </a>
             </div>
-<!-- end of maindiv -->
+            <!-- end of maindiv -->
         </div>
     </main>
 
-    <div class="w-full text-center p-5"><a role="button" class="btn btn-primary py-2 mx-auto rounded-lg  transition-all px-4 font-medium projects-link" href="./projects.html">See All Projects</a></div>
+    <div class="w-full text-center p-5"><a role="button"
+            class="btn btn-primary py-2 mx-auto rounded-lg  transition-all px-4 font-medium projects-link"
+            href="./projects.html">See All Projects</a></div>
 
     <footer>
-        
+
     </footer>
 </body>
-</html>7
+</html>

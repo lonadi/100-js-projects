@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +19,8 @@
                     <img src="./img/icon/align-left.svg" alt="logo" width="100"
                         class="logo d-inline-block align-text-top">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                    aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- make the search query function -->
@@ -33,42 +33,252 @@
                             <a class="nav-link" href="./projects.html">Projects</a>
                         </li>
                         <li class="nav-item border-bottom">
-                            <a class="nav-link">About</a>
+                            <a class="nav-link" href="./about.html">About</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                        <input class="form-control me-2" id="search" type="search" placeholder="Search"
+                            aria-label="Search">
                     </form>
                 </div>
             </div>
         </nav>
     </header>
     <main class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card project-card h-100" onclick="location.href = './html/height-converter.html';">
-                    <div class="card-header">
-                        <img src="./100JS screenshots/Height Converter _ Leo100js.jpg" class="card-img-top preview-img" loading="lazy" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <div class="project-tags mb-3">
-                            <span id="html"></span>
-                            <span id="css"></span>
-                            <span id="js"></span>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="project-list">
+
+            <div class="col project-item">
+                <a href="./html/month-calendar.html" target="_blank" class="project-link">
+                    <div class="card project-card h-100">
+                        <div class="card-header">
+                            <img src="./100JS screenshots/Month calendar _ Leo100js.jpg"
+                                class="card-img-top preview-img" loading="lazy" alt="...">
                         </div>
-                        <h5 class="card-title">Height converter</h5>
-                        <p class="card-text">The aim of this project is to create a functional height converter that is capable of converting between centimetres, inches, metres & feet.</p>
+                        <div class="card-body">
+                            <div class="project-tags mb-3">
+                                <span id="html"></span>
+                                <span id="css"></span>
+                                <span id="js"></span>
+                            </div>
+                            <h5 class="card-title">Month calendar</h5>
+                            <p class="card-text">This calendar is capable of highlighting the exact month, week, year
+                                and day of the week.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creation Date: 24/12/23</small>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Creation Date: 25|12|23</small>
-                    </div>
-                </div>
+                </a>
             </div>
+
+            <div class="col project-item">
+                <a href="./html/height-converter.html" target="_blank" class="project-link">
+                    <div class="card project-card h-100">
+                        <div class="card-header">
+                            <img src="./100JS screenshots/Height Converter _ Leo100js.jpg"
+                                class="card-img-top preview-img" loading="lazy" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="project-tags mb-3">
+                                <span id="html"></span>
+                                <span id="css"></span>
+                                <span id="js"></span>
+                            </div>
+                            <h5 class="card-title">Height converter</h5>
+                            <p class="card-text">The aim of this project is to create a functional height converter that
+                                is capable of converting between centimetres, inches, metres & feet.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creation Date: 25/12/23</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col project-item">
+                <a href="./html/stopwatch.html" target="_blank" class="project-link">
+                    <div class="card project-card h-100">
+                        <div class="card-header">
+                            <img src="./100JS screenshots/Stopwatch _ Leo100js.jpg" class="card-img-top preview-img"
+                                loading="lazy" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="project-tags mb-3">
+                                <span id="html"></span>
+                                <span id="css"></span>
+                                <span id="js"></span>
+                            </div>
+                            <h5 class="card-title">Stopwatch</h5>
+                            <p class="card-text">A stopwatch with basic functions like the start, stop & reset
+                                functions.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creation Date: 26/12/23</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col project-item">
+                <a href="./html/notes-app.html" target="_blank" class="project-link">
+                    <div class="card project-card h-100">
+                        <div class="card-header">
+                            <img src="./100JS screenshots/Notes App _ Leo100js.jpg" class="card-img-top preview-img"
+                                loading="lazy" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="project-tags mb-3">
+                                <span id="html"></span>
+                                <span id="css"></span>
+                                <span id="js"></span>
+                            </div>
+                            <h5 class="card-title">Notes App</h5>
+                            <p class="card-text">This mini application allows users to write and store notes on the
+                                browsers localStorage, with the option of editing the text content or deleting it.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creation Date: 27/12/23</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col project-item">
+                <a href="./html/dice-roll.html" target="_blank" class="project-link">
+                    <div class="card project-card h-100">
+                        <div class="card-header">
+                            <img src="./100JS screenshots/Dice roll simulator _ Leo100js.jpg"
+                                class="card-img-top preview-img" loading="lazy" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="project-tags mb-3">
+                                <span id="html"></span>
+                                <span id="css"></span>
+                                <span id="js"></span>
+                            </div>
+                            <h5 class="card-title">Dice roll simulator</h5>
+                            <p class="card-text">The Dice Roll Simulator project features a central dice and a "Roll
+                                dice" button. Clicking on the button initiates an animation and produces a random number
+                                displayed on the dice and appended in a historical list. The button has an event
+                                listener that randomly generates a number, records it in an array and updates the
+                                history list.</p>
+                            <br>
+                            <p>I'm just waffling at this point 😂</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creation Date: 28/12/23</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col project-item">
+                <a href="./html/rock-paper-scissors.html" target="_blank" class="project-link">
+                    <div class="card project-card h-100">
+                        <div class="card-header">
+                            <img src="./100JS screenshots/Rock, Paper, Scissors _ Leo100js.jpg"
+                                class="card-img-top preview-img" loading="lazy" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="project-tags mb-3">
+                                <span id="html"></span>
+                                <span id="css"></span>
+                                <span id="js"></span>
+                            </div>
+                            <h5 class="card-title">Rock, Paper, Scissors</h5>
+                            <p class="card-text">The Rock, Paper, Scissors project is similar to the usual game that
+                                you've probably played with someone at least once in your lifetime. You play against the
+                                computer who chooses randomly from an array containing 3 elements. Can you defeat the
+                                computer after 20 moves?!</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creation Date: 29/12/23</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col project-item">
+                <a href="./html/shape-shifter.html" target="_blank" class="project-link">
+                    <div class="card project-card h-100">
+                        <div class="card-header">
+                            <img src="./100JS screenshots/Shape shifter _ Leo100js.jpg" class="card-img-top preview-img"
+                                loading="lazy" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="project-tags mb-3">
+                                <span id="html"></span>
+                                <span id="css"></span>
+                                <span id="js"></span>
+                            </div>
+                            <h5 class="card-title">Shape Shifter</h5>
+                            <p class="card-text">This project involves the use of the clip-path css property with a
+                                keyframes animation to change the shape of the element. The animation is infinite &
+                                lasts for 5 seconds.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creation Date: 30/12/23</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col project-item">
+                <a href="./html/age-calculator.html" target="_blank" class="project-link">
+                    <div class="card project-card h-100">
+                        <div class="card-header">
+                            <img src="./100JS screenshots/Age calculator _ Leo100js.jpg"
+                                class="card-img-top preview-img" loading="lazy" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="project-tags mb-3">
+                                <span id="html"></span>
+                                <span id="css"></span>
+                                <span id="js"></span>
+                            </div>
+                            <h5 class="card-title">Age Calculator</h5>
+                            <p class="card-text">A date input is given for the purpose of selecting a date, featuring a
+                                button that calculates the years by subtracting the input value from the current date.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creation Date: 31/12/23</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col project-item">
+                <a href="./html/weight-converter.html" target="_blank" class="project-link">
+                    <div class="card project-card h-100">
+                        <div class="card-header">
+                            <img src="./100JS screenshots/Weight Converter _ Leo100js.jpg"
+                                class="card-img-top preview-img" loading="lazy" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="project-tags mb-3">
+                                <span id="html"></span>
+                                <span id="css"></span>
+                                <span id="js"></span>
+                            </div>
+                            <h5 class="card-title">Weight Converter</h5>
+                            <p class="card-text">This project provides an input requiring a numeric value, it then
+                                converts that value from kg to pounds in real time.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Creation Date: 1/1/24</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- end of main div -->
         </div>
     </main>
     <footer>
 
     </footer>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>

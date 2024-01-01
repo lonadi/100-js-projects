@@ -1,6 +1,7 @@
 <!-- put the icon before doing any dhit -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./index.css">
     <script src="./index.js"></script>
     <script src="./all.js"></script>
+    <script src="./typer.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 </head>
 
@@ -19,9 +21,8 @@
                     <img src="./img/icon/align-left.svg" alt="logo" width="100"
                         class="logo d-inline-block align-text-top">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                    aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- make the search query function -->
@@ -30,18 +31,72 @@
                         <li class="nav-item border-bottom">
                             <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
-                        <li class="nav-item active border-bottom">
+                        <li class="nav-item border-bottom">
                             <a class="nav-link" href="./projects.html">Projects</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a class="nav-link">About</a>
+                        <li class="nav-item active border-bottom">
+                            <a class="nav-link" href="./about.html">About</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
+
+
+    <main class="container">
+
+        <div class="type-wrap">
+            <div id="typed-strings" style="display: none;">
+                <p>It <em>types</em> out sentences.</p>
+                <p>My name is Leonard.</p>
+                <p>This is my Portfolio.</p>
+                <p>Check out my projects!</p>
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+            <span class="typed-cursor"
+                aria-hidden="true">|</span>
+            <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        </div>
+
+        <!-- use progress bars for skills -->
+
+
+
+        About Leo's Frontend Projects
+
+        Welcome to Leo's Frontend Projects – a collection of web development endeavors crafted by Leo! I'm passionate
+        about creating visually appealing and interactive user experiences that breathe life into the digital realm.
+
+        Who Am I?
+        I'm Leo, a dedicated frontend developer with a keen eye for design and a love for turning ideas into immersive
+        web applications. My journey in the world of web development is driven by a commitment to mastering the latest
+        technologies and creating seamless, intuitive user interfaces.
+
+        What You'll Find Here:
+        In this portfolio, you'll discover a variety of frontend projects that showcase my skills, creativity, and the
+        ability to transform concepts into responsive, user-friendly websites. From vibrant landing pages to dynamic web
+        applications, each project is a testament to my commitment to excellence.
+
+        Why Frontend Development?
+        Frontend development, to me, is not just about writing code; it's about crafting digital experiences that
+        captivate and delight users. Every line of code, every pixel on the screen is an opportunity to enhance
+        usability and create a lasting impression.
+
+        Let's Connect:
+        I'm always eager to collaborate, learn, and explore new possibilities. If you have a project in mind or just
+        want to discuss the exciting world of frontend development, feel free to reach out. Let's turn ideas into
+        reality and make the web a more engaging place!
+
+        Thank you for visiting Leo's Frontend Projects. I hope you enjoy exploring these creations as much as I enjoyed
+        building them!
+
+
+    </main>
+
+
+
+</body>
