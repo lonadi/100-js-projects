@@ -36,7 +36,7 @@ gtag('config', 'G-52QKVCYRKC');
 
 
 head.appendChild(link);
-head.appendChild(link2);
+head.appendChild(link2); 
 head.appendChild(link3);
 head.appendChild(script);
 head.appendChild(script2);
