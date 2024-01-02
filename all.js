@@ -11,6 +11,11 @@ link2 = document.createElement('link');
 link2.rel = 'stylesheet';
 link2.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css';
 
+var link3 = document.createElement('link');
+link3.rel = 'shortcut icon';
+link3.href = "../img/favicon/leocs-website-favicon-color.png";
+link3.type = 'image/x-icon';
+
 script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js';
 
@@ -38,6 +43,7 @@ script5.async;
 
 head.appendChild(link);
 head.appendChild(link2); 
+head.appendChild(link3);
 head.appendChild(script);
 head.appendChild(script2);
 head.appendChild(script3);

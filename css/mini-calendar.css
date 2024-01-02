@@ -8,7 +8,7 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
-    font-family: cursive;
+    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     background-color: #53a034;
     justify-content: center;

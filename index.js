@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 project.style.display = 'none';
             }
-
         }
         
     });
