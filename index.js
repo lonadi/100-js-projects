@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 project.style.display = 'none';
             }
 
-            if ()
         }
         
     });
