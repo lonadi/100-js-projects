@@ -1,60 +1,55 @@
-// Initialize display elements
-var display = document.getElementById('display');
-var display2 = document.getElementById('display2');
+let display = document.getElementById('display');
+let display2 = document.getElementById('display2');
+let equal = document.getElementById('equal');
+let allClear = document.getElementById('clear');
+display.innerHTML = 0
 
-// Function to append a value to the display
 function insert(num) {
-  display.value += num;
+    num.value = num
+    if (display.innerHTML.length === 9) {
+        display.innerHTML = 'Error'
+    }
+    if (display.innerHTML === '0') {
+        display.innerHTML = ''
+    }
+    display.innerHTML += num
 }
 
-// Function to handle operator buttons
 function opt(operand) {
-  if (display.value !== '') {
-    display.value += operand;
-    display2.innerHTML = display.value;
-    display.value = '';
-  }
+    if (display.value != '') {
+        display.innerHTML += operand
+        display2.value = display.innerHTML
+        display.innerHTML = ''
+    }
 }
 
-// Function to handle the "AC" (clear) button
-function clear() {
-  display.value = '';
-  display2.innerHTML = '';
-}
-
-// Function to handle the backspace button
-function back() {
-  var displayValue = display.value;
-  display.value = displayValue.slice(0, -1);
-}
-
-// Function to handle the "=" (equal) button
-document.getElementById('equal').addEventListener('click', function () {
-  try {
-    var solve = eval(display2.innerHTML + display.value);
-    display.value = solve;
-  } catch (error) {
-    display.value = 'Error';
-  }
-});
-
-// Function to handle the "%" button (assuming you want to calculate percentage of the current value)
-document.getElementById('percentage').addEventListener('click', function () {
-  try {
-    display.value = eval(display.value) / 100;
-  } catch (error) {
-    display.value = 'Error';
-  }
-});
-
-// Function to handle the "DEL" (delete) button
-document.getElementById('delete').addEventListener('click', function () {
-  back();
-});
-
-// Function to handle the "0" button separately
 function zero() {
-  if (display.value !== '') {
-    display.value += '0';
-  }
+    if (display.value != '') {
+        display.innerHTML += 0
+    }
+}
+
+equal.addEventListener('click', function(){
+    let solve = eval(display2.value + display.innerHTML);
+    display.innerHTML = solve;
+
+    if (display.value == 0) {
+        display.value = ''
+    }
+
+    if (display.value == "Infinity") {
+        display.innerHTML = 'cant divide by zero'
+    }
+})
+
+allClear.addEventListener('click', function(){
+    display.innerText = 0
+})
+
+function back() {
+    display.innerHTML = display.innerHTML.substring(0, display.innerHTML.length-1)
+
+    if (display.innerHTML.length === 0) {
+        display.innerHTML = 0;
+    }
 }
