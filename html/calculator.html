@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../all.js">
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display" id="display"></div>
+        <div id="display2"></div>
+        <div class="buttons">
+            <button type="button" class="btn function span_two clear" id="clear" onclick="clear()">AC</button>
+            <button type="button" class="btn function delete" id="delete" onclick="back()">DEL</button>
+            <button type="button" class="btn function" id="percentage">%</button>
+            <button type="button" class="btn operand row-4" onclick="opt('/')"> &divide; </button>
+            <button type="button" class="btn num-btn" onclick="insert(7)">7</button>
+            <button type="button" class="btn num-btn" onclick="insert(8)">8</button>
+            <button type="button" class="btn num-btn" onclick="insert(9)">9</button>
+            <button type="button" class="btn operand row-4" onclick="opt('*')"> &times; </button>
+            <button type="button" class="btn num-btn" onclick="insert(4)">4</button>
+            <button type="button" class="btn num-btn" onclick="insert(5)">5</button>
+            <button type="button" class="btn num-btn" onclick="insert(6)">6</button>
+            <button type="button" class="btn operand row-4" onclick="opt('-')"> - </button>
+            <button type="button" class="btn num-btn" onclick="insert(1)">1</button>
+            <button type="button" class="btn num-btn" onclick="insert(2)">2</button>
+            <button type="button" class="btn num-btn" onclick="insert(3)">3</button>
+            <button type="button" class="btn operand row-4" onclick="opt('+')"> + </button>
+            <button type="button" class="btn num-btn num-0" onclick="zero()">0</button>
+            <button type="button" class="btn num-btn" onclick="insert('.')">.</button>
+            <button type="button" class="btn operand span_two equal" id="equal">=</button>
+        </div>
+    </div>
+
+ <script src="../js/calculator.js"></script>
+</body>
+</html>
