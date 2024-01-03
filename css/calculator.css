@@ -78,7 +78,17 @@ body {
     justify-content: left;
 }
 
-.btn:active,
-.btn:focus {
-    filter: brightness(90%);
+.btn.operand:active,
+.btn.operand:focus {
+    background: white;
+    color: #ff9e00;
+}
+
+.btn.num-btn:hover {
+    background: #555555;
+    transition: ease-in-out .4s;
+}
+
+.btn.function:hover {
+    background: #bfbfbf;
 }
