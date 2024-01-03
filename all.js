@@ -53,7 +53,7 @@ head.appendChild(script5);
 let footer = `
     <footer id="creds">
         <span id="first-line">Made with 😭 by Leo. </span>
-        <span id="second-line"> <a href="https://github.com/liltrapo" style="color: unset;"><i class="fa fa-github" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a>
+        <span id="second-line"> <a href="https://github.com/liltrapo/100-js-projects" style="color: unset;"><i class="fa fa-github" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a>
        <!-- <a href="https://twitter.com/teezleo" style="color: unset"><i class="fa-brands fa-x-twitter" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a> -->
         </span>
     </footer>

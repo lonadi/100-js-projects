@@ -1,7 +1,6 @@
-var calcButton, totalAmountDisplay;
+var calcBtn, totalAmountDisplay;
 
-// Assuming these elements are in the HTML and the script is executed after the DOM is ready
-calcButton = document.getElementById('calc');
+calcBtn = document.getElementById('calc');
 totalAmountDisplay = document.getElementById('total-amount');
 
 var calc = () => {
@@ -10,7 +9,7 @@ var calc = () => {
     return billAmount / 100 * tipPercent + billAmount;
 }
 
-calcButton.addEventListener('click', () => {
+calcBtn.addEventListener('click', () => {
     const result = calc();
     totalAmountDisplay.innerHTML = result;
 });

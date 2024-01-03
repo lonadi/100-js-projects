@@ -92,3 +92,21 @@ body {
 .btn.function:hover {
     background: #bfbfbf;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    text-align: center;
+    display: flex;
+    background-color: #252734 !important;
+    right: 0;
+    padding: 5px;
+    color: white;
+    bottom: 0;
+    font-weight: 400;
+    /* font-size: 18px; */
+    font-family: 'Roboto Condensed', serif !important;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
