@@ -35,9 +35,19 @@ a.primary {
   color: var(--secondary-color) !important;
 }
 
+header {
+    height: 70px;
+}
+
 header nav {
-  background-color: #444 !important; 
-  position: sticky !important;
+  background-color: #444 !important;
+  position: fixed !important;
+  height: 55px;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
 }
 
 nav .nav-link {
