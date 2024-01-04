@@ -276,3 +276,18 @@ li.nav-item.active a:hover {
 a.project-link {
     text-decoration: none;
 }
+
+
+@media screen and (max-width: 600px) {
+  div#navbar-toggler.show {
+    width: 100%;
+    background: #444444;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    height: 175px;
+    left: 0;
+    right: 0;
+}
+}
+
