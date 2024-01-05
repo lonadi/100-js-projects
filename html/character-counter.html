@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="../css/character-counter.css">
+    <script src="../all.js"></script>
+</head>
+<body>
+    <!-- make a word counter -->
+    <div class="container">
+        <h2>Character Counter</h2>
+        <textarea id="textarea" class="textarea" placeholder="Text goes here..." maxlength="3500"></textarea>
+        <div class="counter-container">
+          <p>
+            Total Charaters:
+            <span class="total-value" id="total-value">0</span>
+          </p>
+          <p>
+            Remaining:
+            <span class="remainder-value" id="remainder-value">3500</span>
+          </p>
+        </div>
+      </div>
+
+    <script src="../js/character-counter.js"></script>
+</body>
+</html>
