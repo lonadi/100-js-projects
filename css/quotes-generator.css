@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -46,15 +48,16 @@ body {
     cursor: pointer;
     padding: 12px 20px;
     margin-top: 20px;
-    color: #fff;
-    background: #6fb9ee;
+    color: #fff !important;
+    background: #10a1ff !important;
     border: none;
     transition: background 0.3s ease;
     display: inline-block;
 }
 
 .new-quote:hover {
-    background: #539ae5;
+    background: #005cbd !important;
+    transition: .4s ease-in-out;
 }
 
 .author {
@@ -120,4 +123,54 @@ p {
     .author {
         font-size: 1.2rem;
     }
+}
+
+.github-corner svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    mix-blend-mode: darken;
+    color: #eeeeee;
+    fill: #353535;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 0.56s;
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    20%,
+    60% {
+        transform: rotate(-20deg);
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg);
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    text-align: center;
+    display: flex;
+    background-color: #252734 !important;
+    right: 0;
+    padding: 5px;
+    color: white;
+    bottom: 0;
+    font-weight: 400;
+    /* font-size: 18px; */
+    font-family: 'Roboto Condensed', serif;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
 }
