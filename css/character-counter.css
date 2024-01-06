@@ -9,12 +9,11 @@ body {
     align-items: center;
     font-family: 'Labrada', Courier, monospace;
     min-height: 100vh;
-    background: #4b8d1b !important;
 }
 
 .container {
     width: 450px !important;
-    max-width: 600px;
+    height: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -32,7 +31,9 @@ textarea {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%; 
+    width: 100%;
+    position: relative;
+    top: 30px;
 }
 
 span#total-value {
@@ -41,4 +42,8 @@ span#total-value {
 
 span#remainder-value {
     color: #ff3333;
+}
+
+textarea#textarea {
+    text-align: center;
 }

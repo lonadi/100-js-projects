@@ -291,3 +291,8 @@ a.project-link {
 }
 }
 
+
+
+a.github-corner {
+    display: none !important;
+}
