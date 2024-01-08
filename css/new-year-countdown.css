@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    font-family: 'Labrada', Courier, monospace;
+    min-height: 100vh;
+    background-color: #3d80dd !important;
+}
+
+.container {
+    max-width: 600px;
+    height: 350px;
+    justify-content: center;
+    background-color: transparent !important;
+    box-shadow: 2px -1px 13px 1px #d6d6d6;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.year {
+    font-size: 60px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.countdown {
+    margin: 30px;
+    background-color: rgb(59 105 168);
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown > span {
+    margin: 0 15px;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: -25px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+.countdown > span::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: 0.35em;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+}
+
+#day::before {
+    content: "Day";
+}
+
+#hour::before {
+    content: "Hour";
+}
+
+#minute::before {
+    content: "Minute";
+}
+
+#second::before {
+    content: "Second";
+}
