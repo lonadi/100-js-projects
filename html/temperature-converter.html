@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="../css/temperature-converter.css">
+    <script src="../all.js"></script>
+</head>
+<body>
+    <div class="container">
+        <i class="fa fa-duotone fa-temperature-full fa-xl" style="--fa-primary-color: #d30909; --fa-secondary-color: #545454;"></i>       
+        <br> 
+        <h3 class="text-center">Temperature Converter</h3>
+        <div class="temp-wrap">
+          <label for="celsius">Celsius:</label>
+          <input onchange="computeTemp(event)" type="number" name="celsius" id="celsius" placeholder="Enter Temperature" class="input">
+        </div>
+        <div class="temp-wrap">
+          <label for="fahrenheit">Fahrenheit:</label>
+          <input onchange="computeTemp(event)" type="number" name="fahrenheit" id="fahrenheit" placeholder="Enter Temperature" class="input">
+        </div>
+        <div class="temp-wrap">
+          <label for="kelvin">Kelvin:</label>
+          <input onchange="computeTemp(event)" type="number" name="kelvin" id="kelvin" placeholder="Enter Temperature" class="input">
+        </div>
+    </div>
+
+
+
+    <script src="../js/temperature-converter.js"></script>
+</body>
+</html>
