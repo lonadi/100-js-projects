@@ -272,4 +272,3 @@ function calculate(unit, result) {
         `
     }
 }
-

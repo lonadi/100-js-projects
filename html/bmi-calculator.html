@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="../css/bmi-calculator.css">
+    <script src="../all.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center">BMI Calculator</h3>
+        <div class="main">
+            <label for="height">Your Height:</label>
+            <input type="number" id="height-val">
+    
+            <div class="options">
+                <input type="radio" class="btn-check" name="units" id="centimetre" autocomplete="off" checked>
+                <label class="btn" for="centimetre">cm</label>
+    
+                <input type="radio" class="btn-check" name="units" id="inch" autocomplete="off">
+                <label class="btn" for="inch">in</label>
+    
+                <input type="radio" class="btn-check" name="units" id="feet" autocomplete="off">
+                <label class="btn" for="feet">ft</label>
+    
+                <input type="radio" class="btn-check" name="units" id="metre" autocomplete="off">
+                <label class="btn" for="metre">m</label>
+            </div>
+
+
+            <label for="weight">Your Weight (kg):</label>
+            <input type="number" id="weight-val">    
+
+            <button class="btn btn-primary text-center" id="calc">Calculate</button>
+
+            <input disabled="" type="text" class="input" id="bmi-result">
+
+            <div class="message">Weight Condition: <span id="weight-condition"></span></div>
+        </div>
+
+    </div>
+
+    <script src="../js/bmi-calculator.js"></script>
+</body>
+
+</html>
