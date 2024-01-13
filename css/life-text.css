@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Karla", monospace !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 1.5s ease-in;
+}
+
+.container {
+  padding: 20px;
+  box-shadow: none !important;
+  border-radius: 10px;
+  max-width: 100% !important;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff !important;
+  align-items: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f6e58d;
+	height: 100vh;
+    margin: 0;
+}
+
+.text-life {
+    background:  url('https://media.giphy.com/media/ujHXZvh8S0XNm/giphy.gif') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 10px;
+    line-height: 10px;
+    margin: 0;
+    text-align: justify;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
