@@ -83,3 +83,13 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
 }
+
+a.all-projects-link {
+    text-decoration: none;
+}
+
+.all-projects-cont {
+    position: absolute;
+    font-size: 16px;
+    top: 20px;
+}
