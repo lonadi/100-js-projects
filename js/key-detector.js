@@ -1,6 +1,7 @@
 const insert = document.getElementById('insert');
 const textInput = document.getElementById('textInput');
 
+textInput.click();
 function handleKeyEvent(e) {
     console.log(e);
     insert.innerHTML = `
