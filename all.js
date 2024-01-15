@@ -53,7 +53,7 @@ head.appendChild(script5);
 let footer = `
     <footer id="creds">
         <span id="first-line">Made with 😭 by Leo. </span>
-        <span id="second-line"> <a href="https://wa.me/+2348137364059?text=Hey%27,%20I%20would%20love%20to%20connect%20with%20you" style="color: unset;"><i class="fa fa-whatsapp" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a>
+        <span id="second-line"> <a href="https://wa.me/+2348137364059?text=Hey,%20I%20would%20love%20to%20connect%20with%20you." style="color: unset;"><i class="fa fa-whatsapp" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a>
        <!-- <a href="https://twitter.com/teezleo" style="color: unset"><i class="fa-brands fa-x-twitter" style="font-size: 30px; cursor: pointer;" aria-hidden="true"></i></a> -->
         </span>
     </footer>
