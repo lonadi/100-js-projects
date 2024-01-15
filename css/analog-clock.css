@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: black !important;
+  font-family: "Karla", monospace !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 1.5s ease-in;
+}
+
+.container {
+  background: black !important;
+  padding: 20px;
+  box-shadow: 12px 14px 13px 2px #0000004d !important;
+  border-radius: 10px;
+  max-width: 450px !important;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock {
+  max-width: 350px;
+  height: 350px;
+  width: 100%;
+  border: 3px solid #313131;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px #494949;
+  background: #101010;
+}
+
+
+.in-clock::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 18px;
+  margin-left: -9px;
+  margin-top: -6px;
+  background: #535353;
+  z-index: 11;
+}
+
+.times {
+    position: absolute;
+    font-size: 27px;
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+
+.times {
+    position: relative;
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    margin: auto;
+  }
+  
+  .times div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em; /* Adjust the font size as needed */
+  }
+  
+  .one { transform: translate(-50%, -50%) rotate(30deg); }
+  .two { transform: translate(-50%, -50%) rotate(60deg); }
+  .three { transform: translate(-50%, -50%) rotate(90deg); }
+  .four { transform: translate(-50%, -50%) rotate(120deg); }
+  .five { transform: translate(-50%, -50%) rotate(150deg); }
+  .six { transform: translate(-50%, -50%) rotate(180deg); }
+  .seven { transform: translate(-50%, -50%) rotate(210deg); }
+  .eight { transform: translate(-50%, -50%) rotate(240deg); }
+  .nine { transform: translate(-50%, -50%) rotate(270deg); }
+  .ten { transform: translate(-50%, -50%) rotate(300deg); }
+  .eleven { transform: translate(-50%, -50%) rotate(330deg); }
+  .twelve { transform: translate(-50%, -50%) rotate(0deg); }
+  
+  

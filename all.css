@@ -91,5 +91,7 @@ a.all-projects-link {
 .all-projects-cont {
     position: absolute;
     font-size: 16px;
-    top: 20px;
+    top: 10px;
+    width: 100%;
+    text-align: center;
 }

@@ -297,3 +297,7 @@ a.project-link {
 a.github-corner {
     display: none !important;
 }
+
+.all-projects-cont {
+    display: none;
+}

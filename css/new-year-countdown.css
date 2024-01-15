@@ -1,4 +1,4 @@
-* {
+l* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -81,4 +81,8 @@ body {
 
 #second::before {
     content: "Second";
+}
+
+a.all-projects-link {
+    color: purple;
 }
