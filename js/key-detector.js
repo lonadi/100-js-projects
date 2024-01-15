@@ -1,5 +1,7 @@
 const insert = document.getElementById('insert');
 
+document.querySelector('input').click()
+
 window.addEventListener('keydown', (e) => {
 	console.log(e);
 	insert.innerHTML = `

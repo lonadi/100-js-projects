@@ -94,3 +94,9 @@ div#insert {
     justify-content: center;
     margin-top: 20px;
 }
+
+input {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
