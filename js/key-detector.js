@@ -1,7 +1,7 @@
 const insert = document.getElementById('insert');
 const textInput = document.getElementById('textInput');
 
-textInput.click();
+textInput.focus();
 function handleKeyEvent(e) {
     console.log(e);
     insert.innerHTML = `
@@ -22,6 +22,7 @@ function handleKeyEvent(e) {
 
 window.addEventListener('keydown', handleKeyEvent);
 textInput.addEventListener('input', (e) => {
+    textInput.value = '';
     const virtualKeyEvent = {
         key: e.data || 'Enter',
         keyCode: e.inputType === 'insertText' ? e.data.charCodeAt(0) : 13,

@@ -70,6 +70,10 @@ body {
     opacity: 0.7; 
 }
 
+input {
+    display: none;
+}
+
 
 @media (max-width: 768px) {
     .container {
@@ -88,16 +92,17 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    input {
+        display: block;
+        width: 200px;
+    }
+}
+
 
 div#insert {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-}
-
-input {
-    height: 0;
-    width: 0;
-    visibility: hidden;
 }
