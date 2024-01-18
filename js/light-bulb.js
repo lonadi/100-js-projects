@@ -104,3 +104,17 @@ function toggle() {
 }
 
 image.addEventListener('click', toggle);
+
+
+// const lastAlertTimestamp = localStorage.getItem('lastAlertTimestamp');
+// const currentTime = new Date().getTime();
+
+// if (!lastAlertTimestamp || currentTime - lastAlertTimestamp > 24 * 60 * 60 * 1000) {
+//     alert(" !");
+
+//     localStorage.setItem('lastAlertTimestamp', currentTime);
+
+//     setTimeout(() => {
+//         window.close();
+//     }, 5000);
+// }
