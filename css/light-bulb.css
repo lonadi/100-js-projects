@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background: black !important;
+    /* background: linear-gradient(45deg, black, transparent); */
+    justify-content: center;
+}
+
+.container {
+    background-color: #000000;
+    text-align: center;
+    /* width: 450px !important;
+    height: 90px !important; */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+h3 {
+    color: white !important;
+    background: none !important;
+    padding: 20px;
+}
+
+img {cursor: pointer; background: none !important;}
+
+footer {
+    background-color: #000000;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+.github-corner svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    mix-blend-mode: darken;
+    color: #eeeeee;
+    fill: #353535;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 0.56s;
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    20%,
+    60% {
+        transform: rotate(-20deg);
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg);
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    text-align: center;
+    display: flex;
+    right: 0;
+    padding: 5px;
+    bottom: 0;
+    font-weight: 400;
+    /* font-size: 18px; */
+    font-family: 'Roboto Condensed', serif;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+a, i {
+    background: none !important;
+}
+
+footer > *, footer {
+    background: none !important;
+
+}
+
+a.all-projects-link {
+    text-decoration: none;
+}
+
+.all-projects-cont {
+    position: absolute;
+    font-size: 16px;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    background: none !important;
+}
+
+.all-projects-cont > * {
+    background: none !important;
+}
+
+.white-background {
+    background-color: white !important;
+}
