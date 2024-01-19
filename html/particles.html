@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particles</title>
+    <link rel="stylesheet" href="../css/particles.css">
+    <script src="../all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="count-particles">
+            <span class="js-count-particles">--</span> particles
+        </div>
+
+        <div id="particles-js"></div>
+
+    </div>
+
+    <script src="../js/particles.js"></script>
+    <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function () {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
+</body>
+</html>

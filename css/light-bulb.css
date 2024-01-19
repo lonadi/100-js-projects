@@ -55,6 +55,7 @@ footer {
     color: #eeeeee;
     fill: #353535;
     clip-path: polygon(0 0, 100% 0, 100% 100%);
+    background: none !important;
 }
 
 .github-corner:hover .octo-arm {

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    font-family: 'Labrada', Courier, monospace;
+    min-height: 100vh;
+    background-color: #3d4055;
+    background-color: #009ee5 !important;
+}
+
+.container {
+    background-color: #252734 !important;
+    color: #f0f0f0 !important;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh !important;
+    /* max-height: 100% !important; */
+    max-width: 100% !important;
+    width: 100% !important;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 20px 10px #444650;
+    -moz-box-shadow: 0px 0px 20px 10px #444650;
+    box-shadow: 0px 0px 10px 2px #444650;
+}
+
+.count-particles {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
