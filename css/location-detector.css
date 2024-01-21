@@ -13,7 +13,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: white !important;
     transition: background 1s ease-in;
+    flex-direction: column;
 }
 
 
@@ -27,8 +29,21 @@ body {
     align-items: center;
 }
 
-#change {
-    width: 100px;
-    height: 45px;
-    border: 1px solid #50575d;
+button {
+    border: none;
+    outline: none;
+    font-size: 50px;
+    color: #00d1cd;
+    padding: 23px 44px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px !important;
+    font-weight: 500;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+div#disclaimer {
+    position: absolute;
+    top: 50px;
 }
