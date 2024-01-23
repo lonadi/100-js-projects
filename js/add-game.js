@@ -2,7 +2,13 @@ let firstNum = document.getElementById('first-num');
 let secondNum = document.getElementById('second-num');
 let alertEl = document.querySelector('.alert');
 let checkBtn = document.getElementById('check');
-
+let inputEl = document.getElementById('answer'); 
+let iconEl = document.querySelector('i');
+let msgWrap = document.querySelector('.message');
+let messageEl = document.getElementById('message');
+let score = 0;
+let scoreCount = document.getElementById('score-count');
+scoreCount.textContent = score;
 let num1 = parseInt(Math.random() * 100);
 let num2 = parseInt(Math.random() * 100);
 
@@ -15,23 +21,23 @@ function generateNum() {
     secondNum.textContent = num2;
     inputEl.value = '';
     alertEl.style.display = 'none';
+    iconEl.style.display = 'none';
 }
 
 function showMsg(isCorrect) {
     if (isCorrect) {
-        alertEl.classList.remove('danger');
-        alertEl.classList.add('success');
+        alertEl.style.display = 'block';
+        alertEl.classList.remove('alert-danger');
+        alertEl.classList.add('alert-success');
+        iconEl.style.display = 'block';
         iconEl.classList.remove('fa-times');
         iconEl.classList.add('fa-check');
-        messageEl.textContent = 'Correct!';
-    } else {
-        alertEl.classList.remove('success');
-        alertEl.classList.add('danger');
-        iconEl.classList.remove('fa-check');
-        iconEl.classList.add('fa-times');
-        messageEl.textContent = 'Wrong! The correct answer was ' + answer;
+        messageEl.textContent = 'Correct! ';
+        score += 1;
+        scoreCount.textContent = score;
+
     }
-    alertEl.style.display = 'block';
+    msgWrap.style.display = 'flex;';
 }
 
 checkBtn.addEventListener('click', function(){
@@ -40,7 +46,14 @@ checkBtn.addEventListener('click', function(){
     if (userAnswer === answer) {
         showMsg(true);
     } else {
-        showMsg(false);
+        alertEl.style.display = 'block';
+        alertEl.classList.remove('alert-success');
+        alertEl.classList.add('alert-danger');
+        iconEl.style.display = 'block';
+        iconEl.classList.remove('fa-check');
+        iconEl.classList.add('fa-times');
+        msgWrap.style.display = 'block';
+        messageEl.textContent = 'Wrong! The correct answer was ' + answer;
     }
 
     setTimeout(generateNum, 2000);
