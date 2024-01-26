@@ -9,14 +9,14 @@ let messageEl = document.getElementById('message');
 let score = 0;
 let scoreCount = document.getElementById('score-count');
 scoreCount.textContent = score;
-let num1 = parseInt(Math.random() * 1000);
+let num1 = parseInt(Math.random() * 100);
 let num2 = parseInt(Math.random() * 1000);
 
 
 function generateNum() {
     num1 = parseInt(Math.random() * 1000);
     num2 = parseInt(Math.random() * 1000);
-    answer = num1 + num2;
+    answer = num1 * num2;
     firstNum.textContent = num1;
     secondNum.textContent = num2;
     inputEl.value = '';

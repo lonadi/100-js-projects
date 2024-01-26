@@ -16,7 +16,7 @@ let num2 = parseInt(Math.random() * 1000);
 function generateNum() {
     num1 = parseInt(Math.random() * 1000);
     num2 = parseInt(Math.random() * 1000);
-    answer = num1 + num2;
+    answer = num1 - num2;
     firstNum.textContent = num1;
     secondNum.textContent = num2;
     inputEl.value = '';

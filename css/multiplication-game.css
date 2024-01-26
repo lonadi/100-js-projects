@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Karla', monospace !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white !important;
+    transition: background 1s ease-in;
+    flex-direction: column;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0) !important;
+    padding: 20px;
+    box-shadow: 12px 14px 13px 2px rgba(0, 0, 0, 0.116) !important;
+    border-radius: 10px;
+    display: flex;
+    max-width: 600px !important;
+    width: 95% !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#icon.fa-times{
+    /* display: none; */
+    color: #ff2639;
+    font-size: 20px;
+}
+
+#icon.fa-check{
+    /* display: none; */
+    color: #00c210;
+    font-size: 20px;
+}
+
+.numbers {
+    display: flex;
+    font-size: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#answer {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+
+.score.text-center {
+    text-align: center;
+    margin-bottom: 10px;
+}
