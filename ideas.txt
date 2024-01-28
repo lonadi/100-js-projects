@@ -7,5 +7,3 @@ append to the bottom of pwd gen
 
         make it possible for users to view total score on each of the arithmetic series using localstorage to store and add em together
         they might be a limit for them to stop at maybe 100 questions each to keep em engaged
-
-        
