@@ -13,7 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 1s ease-in;
+    transition: background .5s ease;
 }
 
 
