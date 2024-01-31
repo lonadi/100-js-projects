@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Eclipse</title>
+    <link rel="stylesheet" href="../css/solar-eclipse.css">
+    <script src="../all.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="inner">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <g id="sun-rays" mask="url(#moon)">
+                        <line x1="100" y1="10" x2="100" y2="30" style="stroke:#e7bc09;stroke-width:2" />
+                        <line x1="100" y1="30" x2="100" y2="50" style="stroke:#e7bc09;stroke-width:2" />
+                        <line x1="100" y1="50" x2="100" y2="70" style="stroke:#e7bc09;stroke-width:2" />
+                        <line x1="100" y1="70" x2="100" y2="90" style="stroke:#e7bc09;stroke-width:2" />
+                        <line x1="100" y1="90" x2="100" y2="110" style="stroke:#e7bc09;stroke-width:2" />
+                    </g>
+
+                    <mask id="moon">
+                        <rect x="-200" y="0" width="600" height="200" style="fill:white;" />
+                        <circle cx="100" cy="100" r="95" style="fill:black;" />
+                    </mask>
+                    <g id="sun-g" mask="url(#moon)">
+                        <circle id="sun" cx="100" cy="100" r="100" style="fill:#e7bc09;" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/solar-eclipse.js"></script>
+</body>
+</html>
