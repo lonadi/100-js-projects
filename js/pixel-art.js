@@ -1,4 +1,3 @@
-
 const container = document.querySelector('.container');
 const sizeEl = document.querySelector('.size');
 const color = document.querySelector('.color');
@@ -72,7 +71,6 @@ pencilModeCheckbox.addEventListener('change', function () {
     eraserMode = false;
 });
 
-
 function savePixelArt() {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
@@ -85,18 +83,22 @@ function savePixelArt() {
         const x = index % size;
         const y = Math.floor(index / size);
 
-        // Use the background color of the pixel directly
         const color = window.getComputedStyle(pixel).getPropertyValue('background-color');
         ctx.fillStyle = color;
         
         ctx.fillRect(x * pixel.offsetWidth, y * pixel.offsetHeight, pixel.offsetWidth, pixel.offsetHeight);
     });
 
-    // Convert canvas to image and open in a new tab
     const image = new Image();
     image.src = canvas.toDataURL('image/png');
-    const newWindow = window.open();
-    newWindow.document.write('<img src="' + image.src + '" width="100%" height="100%"/>');
+
+    const link = document.createElement('a');
+    link.href = image.src;
+    link.download = 'pixel_art.png';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 populate(size);
