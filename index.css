@@ -257,6 +257,8 @@ li.nav-item.active a:hover {
 .projects-link {
   background-color: var(--accent-color) !important;
   border-color: var(--accent-color) !important;
+  transition: .4s ease-in-out !important;
+  border-radius: 5px !important;
 }
 
 .projects-link:hover {
@@ -300,4 +302,21 @@ a.github-corner {
 
 .all-projects-cont {
     display: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li.ms-3 {
+    position: relative;
+    top: 3px;
+    right: 7px;
+}
+
+ul.nav.col-md-4.justify-content-end.list-unstyled.d-flex {
+    position: relative;
+    bottom: 10px;
 }

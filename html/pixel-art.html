@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art</title>
+    <link rel="stylesheet" href="../css/pixel-art.css">
+    <script src="../all.js"></script>
+</head>
+<!-- or make a rgb pixel with over 1000 pixels on the screen tiny -->
+<!-- add option to change the background color of the pixels -->
+<body>
+    <div class="menu dropup">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+          Menu
+        </button>
+        <ul class="dropdown-menu">
+            <div class="options">
+                <label for="gridSize">Grid Size</label>
+                <input type="number" id="gridSize" class="size" value="16">
+            
+                <label for="color">Color</label>
+                <input type="color" id="color" class="color" value="#000000">
+            
+                <label>
+                    Download
+                    <i class="fas fa-circle-down"></i>
+                    <input type="button" class="save-btn btn"></input>
+                </label>
+            
+                <label>
+                    Pencil
+                    <i class="fas fa-pencil-alt"></i>
+                    <input type="checkbox" class="pencil-mode">
+                </label>
+            
+                <label>
+                    Eraser
+                    <i class="fas fa-eraser"></i>
+                    <input type="checkbox" class="eraser"> 
+                </label>
+
+                <button class="reset btn btn-danger">Reset</button>
+            </div>
+        </ul>
+    </div>
+
+    <div class="container"></div>
+
+
+
+    <script src="../js/pixel-art.js"></script>
+</body>
+</html>
