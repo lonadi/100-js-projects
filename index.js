@@ -2,10 +2,7 @@ const head = document.getElementsByTagName('head')[0];
 
 document.title = document.title + ' | Leo100js'
 
-var link, link2, script, script3, script4, script5;
-link = document.createElement('link');
-link.rel = 'stylesheet';
-link.href = '../all.css';
+var link2, script, script3, script4, script5;
 
 link2 = document.createElement('link');
 link2.rel = 'stylesheet';
@@ -41,7 +38,6 @@ script5.async;
 script5.crossOrigin = 'anonymous';
 
 
-head.appendChild(link);
 head.appendChild(link2); 
 head.appendChild(link3);
 head.appendChild(script);
