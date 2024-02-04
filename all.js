@@ -35,6 +35,11 @@ gtag('js', new Date());
 
 gtag('config', 'G-52QKVCYRKC');
 
+script5 = document.createElement('script');
+script5.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5017336691227548'
+script5.async;
+script5.crossOrigin = 'anonymous';
+
 
 head.appendChild(link);
 head.appendChild(link2); 
@@ -43,6 +48,7 @@ head.appendChild(script);
 head.appendChild(script2);
 head.appendChild(script3);
 head.appendChild(script4);
+head.appendChild(script5);
 
 let footer = `
     <footer id="creds">
