@@ -11,18 +11,7 @@ html{
 }
 
 body{
-    /* background-color: #151515 !importaant; */
-    /* background: linear-gradient(to-right, #000, #151515); */
-    /* background: linear-gradient(
-        to right,
-        red 20%,
-        orange 20% 40%,
-        yellow 40% 60%,
-        green 60% 80%,
-        blue 80%
-      ); */
     color: #ffffff !important;
-    /* background: linear-gradient(#555555, #222222); */
     font-family: 'EB Garamond', serif;
     height: 100vh;
     display: flex;
@@ -134,13 +123,6 @@ input {
     text-align: center;
     margin: auto;
 }
-
-
-/* main reason why i code */
-/* its the one thing i do & love that my dad supports.. tryna cope from football */
-/* still wanna be a footballer but i dont think its possible to convince him */
-/* artist is another one to consider.. noone knows my true intentions tho */
-
 
 
 p.alert.alert-danger {
