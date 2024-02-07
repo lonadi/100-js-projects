@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddles</title>
+    <link rel="stylesheet" href="../css/riddles.css">
+    <script src="../all.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="question-cont">
+                <span id="question">What goes up and never comes down</span>
+                <!-- change class to easy and make the background color red -->
+                <span id="difficulty">
+                    Easy
+                </span>
+            </div>
+            <!-- if wrong. else display correct -->
+            <div class="answer-cont">
+                <span id="answer"></span>
+            </div>
+            <div class="score-cont">
+                <span id="score-val"></span>
+            </div>
+        </header>
+
+        <main>
+            <input type="text" id="userInput">
+            <button id="back">Back</button>
+            <button id="next">Next</button>
+        </main>
+    </div>
+
+    <script src="../js/riddles.js"></script>
+</body>
+</html>
