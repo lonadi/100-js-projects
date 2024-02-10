@@ -8,7 +8,7 @@ $(document).ready(function () {
 
         $.ajax({
             method: 'GET',
-            url: 'https://api.api-ninjas.com/v1/rhyme',
+            url: 'https://api.api-ninjas.com/v1/thesaurus',
             data: { word: word },
             headers: { 'X-Api-Key': 'Ft1IHWqsLRAXiTXv4EjSOA==1loxHFAeM65TkNeR' },
             contentType: 'application/json',
@@ -26,7 +26,7 @@ $(document).ready(function () {
         wordContainer.empty();
 
         if (words.length === 0) {
-            wordContainer.append('<p>No rhyming words found.</p>');
+            wordContainer.append('<p>No words found.</p>');
         } else {
             words.forEach(function (word) {
                 wordContainer.append('<div class="word">' + word + '</div>');
