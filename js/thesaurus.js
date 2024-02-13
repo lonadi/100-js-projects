@@ -8,12 +8,11 @@ $(document).ready(function () {
 
         $.ajax({
             method: 'GET',
-            url: 'https://api.api-ninjas.com/v1/thesaurus',
-            data: { word: word },
+            url: 'https://api.api-ninjas.com/v1/thesaurus?word=' + word,
             headers: { 'X-Api-Key': 'Ft1IHWqsLRAXiTXv4EjSOA==1loxHFAeM65TkNeR' },
             contentType: 'application/json',
             success: function (result) {
-                displayWords(result);
+                displaySynonyms(result.synonyms);
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.error('Error: ', textStatus, errorThrown, jqXHR.responseText);
@@ -21,15 +20,15 @@ $(document).ready(function () {
         });
     });
 
-    function displayWords(words) {
+    function displaySynonyms(synonyms) {
         var wordContainer = $('#word-container');
         wordContainer.empty();
 
-        if (words.length === 0) {
-            wordContainer.append('<p>No words found.</p>');
+        if (synonyms.length === 0) {
+            wordContainer.append('<p>No synonyms found.</p>');
         } else {
-            words.forEach(function (word) {
-                wordContainer.append('<div class="word">' + word + '</div>');
+            synonyms.forEach(function (synonym) {
+                wordContainer.append('<div class="word">' + synonym + '</div>');
             });
         }
     }
