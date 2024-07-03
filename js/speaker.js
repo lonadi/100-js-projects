@@ -11,10 +11,14 @@ canvas.height = 300;
 audioFileInput.addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (file) {
-        const objectUrl = URL.createObjectURL(file);
-        initializeAudio(objectUrl);
-        playButton.disabled = false;
-        stopButton.disabled = false;
+        if (file.type.startsWith('audio/')) {
+            const objectUrl = URL.createObjectURL(file);
+            initializeAudio(objectUrl);
+            playButton.disabled = false;
+            stopButton.disabled = false;
+        } else {
+            alert('Please select a valid audio file.');
+        }
     }
 });
 
@@ -68,7 +72,7 @@ function visualize() {
 
     for (let i = 0; i < bufferLength; i++) {
         barHeight = dataArray[i];
-        canvasCtx.fillStyle = `rgb(${barHeight+100}, 50, 50)`;
+        canvasCtx.fillStyle = `rgb(${barHeight + 100}, 50, 50)`;
         canvasCtx.fillRect(x, canvas.height - barHeight / 2, barWidth, barHeight / 2);
         x += barWidth + 1;
     }
