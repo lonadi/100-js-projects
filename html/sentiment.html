@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment</title>
+    <link rel="stylesheet" href="../css/sentiment.css">
+    <script src="../all.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center">Sentiment Analysis</h3>
+
+        <form id="sentimentForm">
+            <label for="textInput">Enter text:</label>
+            <input type="text" maxlength="1500" id="textInput" required>
+            <button type="submit" class="btn btn-primary">Analyze</button>
+        </form>
+        <div id="resultContainer"></div>
+        <!-- analysis type shit -->
+    </div>
+
+    <script src="../js/sentiment.js"></script>
+</body>
+</html>
